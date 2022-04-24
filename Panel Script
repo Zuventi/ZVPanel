@@ -1,0 +1,3502 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ZurentiV1 = {
+	ZurentiV1 = Instance.new("ScreenGui"),
+	Main = Instance.new("Frame"),
+	Requirements = Instance.new("Frame"),
+	Pumpkins = Instance.new("Frame"),
+	Required = Instance.new("Frame"),
+	Limited = Instance.new("TextButton"),
+	UICorner = Instance.new("UICorner"),
+	Title = Instance.new("TextLabel"),
+	Frame = Instance.new("Frame"),
+	UICorner_2 = Instance.new("UICorner"),
+	Close = Instance.new("TextButton"),
+	UICorner_3 = Instance.new("UICorner"),
+	Intro = Instance.new("Frame"),
+	Title_2 = Instance.new("Frame"),
+	UICorner_4 = Instance.new("UICorner"),
+	TextLabel = Instance.new("TextLabel"),
+	Body = Instance.new("Frame"),
+	UICorner_5 = Instance.new("UICorner"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	TextButton = Instance.new("TextButton"),
+	UICorner_6 = Instance.new("UICorner"),
+	TextButton_2 = Instance.new("TextButton"),
+	UICorner_7 = Instance.new("UICorner"),
+	List = Instance.new("ScrollingFrame"),
+	OffSale = Instance.new("Frame"),
+	Limited_2 = Instance.new("ImageLabel"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	TextLabel_4 = Instance.new("TextLabel"),
+	UIGridLayout = Instance.new("UIGridLayout"),
+	Limited_3 = Instance.new("ImageLabel"),
+	TextLabel_5 = Instance.new("TextLabel"),
+	TextLabel_6 = Instance.new("TextLabel"),
+	Limited_4 = Instance.new("ImageLabel"),
+	TextLabel_7 = Instance.new("TextLabel"),
+	TextLabel_8 = Instance.new("TextLabel"),
+	Limited_5 = Instance.new("ImageLabel"),
+	TextLabel_9 = Instance.new("TextLabel"),
+	TextLabel_10 = Instance.new("TextLabel"),
+	Offsale = Instance.new("ImageLabel"),
+	TextLabel_11 = Instance.new("TextLabel"),
+	TextLabel_12 = Instance.new("TextLabel"),
+	Offsale_2 = Instance.new("ImageLabel"),
+	TextLabel_13 = Instance.new("TextLabel"),
+	TextLabel_14 = Instance.new("TextLabel"),
+	Offsale_3 = Instance.new("ImageLabel"),
+	TextLabel_15 = Instance.new("TextLabel"),
+	TextLabel_16 = Instance.new("TextLabel"),
+	Offsale_4 = Instance.new("ImageLabel"),
+	TextLabel_17 = Instance.new("TextLabel"),
+	TextLabel_18 = Instance.new("TextLabel"),
+	Skaters = Instance.new("Frame"),
+	Required_2 = Instance.new("Frame"),
+	Limited_6 = Instance.new("TextButton"),
+	UICorner_8 = Instance.new("UICorner"),
+	Onsale = Instance.new("TextButton"),
+	UICorner_9 = Instance.new("UICorner"),
+	Title_3 = Instance.new("TextLabel"),
+	Frame_2 = Instance.new("Frame"),
+	UICorner_10 = Instance.new("UICorner"),
+	Close_2 = Instance.new("TextButton"),
+	UICorner_11 = Instance.new("UICorner"),
+	Intro_2 = Instance.new("Frame"),
+	Title_4 = Instance.new("Frame"),
+	UICorner_12 = Instance.new("UICorner"),
+	TextLabel_19 = Instance.new("TextLabel"),
+	Body_2 = Instance.new("Frame"),
+	UICorner_13 = Instance.new("UICorner"),
+	TextLabel_20 = Instance.new("TextLabel"),
+	Next = Instance.new("TextButton"),
+	UICorner_14 = Instance.new("UICorner"),
+	Back = Instance.new("TextButton"),
+	UICorner_15 = Instance.new("UICorner"),
+	List_2 = Instance.new("ScrollingFrame"),
+	OnSale = Instance.new("Frame"),
+	Frame_3 = Instance.new("ImageLabel"),
+	TextLabel_21 = Instance.new("TextLabel"),
+	TextLabel_22 = Instance.new("TextLabel"),
+	UIGridLayout_2 = Instance.new("UIGridLayout"),
+	Frame_4 = Instance.new("ImageLabel"),
+	TextLabel_23 = Instance.new("TextLabel"),
+	TextLabel_24 = Instance.new("TextLabel"),
+	Frame_5 = Instance.new("ImageLabel"),
+	TextLabel_25 = Instance.new("TextLabel"),
+	TextLabel_26 = Instance.new("TextLabel"),
+	OffSale_2 = Instance.new("Frame"),
+	Limited_7 = Instance.new("ImageLabel"),
+	TextLabel_27 = Instance.new("TextLabel"),
+	TextLabel_28 = Instance.new("TextLabel"),
+	UIGridLayout_3 = Instance.new("UIGridLayout"),
+	Limited_8 = Instance.new("ImageLabel"),
+	TextLabel_29 = Instance.new("TextLabel"),
+	TextLabel_30 = Instance.new("TextLabel"),
+	Limited_9 = Instance.new("ImageLabel"),
+	TextLabel_31 = Instance.new("TextLabel"),
+	TextLabel_32 = Instance.new("TextLabel"),
+	Limited_10 = Instance.new("ImageLabel"),
+	TextLabel_33 = Instance.new("TextLabel"),
+	TextLabel_34 = Instance.new("TextLabel"),
+	Limited_11 = Instance.new("ImageLabel"),
+	TextLabel_35 = Instance.new("TextLabel"),
+	TextLabel_36 = Instance.new("TextLabel"),
+	Limited_12 = Instance.new("ImageLabel"),
+	TextLabel_37 = Instance.new("TextLabel"),
+	TextLabel_38 = Instance.new("TextLabel"),
+	Limited_13 = Instance.new("ImageLabel"),
+	TextLabel_39 = Instance.new("TextLabel"),
+	TextLabel_40 = Instance.new("TextLabel"),
+	Limited_14 = Instance.new("ImageLabel"),
+	TextLabel_41 = Instance.new("TextLabel"),
+	TextLabel_42 = Instance.new("TextLabel"),
+	Limited_15 = Instance.new("ImageLabel"),
+	TextLabel_43 = Instance.new("TextLabel"),
+	TextLabel_44 = Instance.new("TextLabel"),
+	Limited_16 = Instance.new("ImageLabel"),
+	TextLabel_45 = Instance.new("TextLabel"),
+	TextLabel_46 = Instance.new("TextLabel"),
+	Offsale_5 = Instance.new("ImageLabel"),
+	TextLabel_47 = Instance.new("TextLabel"),
+	TextLabel_48 = Instance.new("TextLabel"),
+	Offsale_6 = Instance.new("ImageLabel"),
+	TextLabel_49 = Instance.new("TextLabel"),
+	TextLabel_50 = Instance.new("TextLabel"),
+	Offsale_7 = Instance.new("ImageLabel"),
+	TextLabel_51 = Instance.new("TextLabel"),
+	TextLabel_52 = Instance.new("TextLabel"),
+	Offsale_8 = Instance.new("ImageLabel"),
+	TextLabel_53 = Instance.new("TextLabel"),
+	TextLabel_54 = Instance.new("TextLabel"),
+	Offsale_9 = Instance.new("ImageLabel"),
+	TextLabel_55 = Instance.new("TextLabel"),
+	TextLabel_56 = Instance.new("TextLabel"),
+	Offsale_10 = Instance.new("ImageLabel"),
+	TextLabel_57 = Instance.new("TextLabel"),
+	TextLabel_58 = Instance.new("TextLabel"),
+	Offsale_11 = Instance.new("ImageLabel"),
+	TextLabel_59 = Instance.new("TextLabel"),
+	TextLabel_60 = Instance.new("TextLabel"),
+	Offsale_12 = Instance.new("ImageLabel"),
+	TextLabel_61 = Instance.new("TextLabel"),
+	TextLabel_62 = Instance.new("TextLabel"),
+	Offsale_13 = Instance.new("ImageLabel"),
+	TextLabel_63 = Instance.new("TextLabel"),
+	TextLabel_64 = Instance.new("TextLabel"),
+	Offsale_14 = Instance.new("ImageLabel"),
+	TextLabel_65 = Instance.new("TextLabel"),
+	TextLabel_66 = Instance.new("TextLabel"),
+	Dusekkar = Instance.new("Frame"),
+	Required_3 = Instance.new("Frame"),
+	Limited_17 = Instance.new("TextButton"),
+	UICorner_16 = Instance.new("UICorner"),
+	Title_5 = Instance.new("TextLabel"),
+	Frame_6 = Instance.new("Frame"),
+	UICorner_17 = Instance.new("UICorner"),
+	Close_3 = Instance.new("TextButton"),
+	UICorner_18 = Instance.new("UICorner"),
+	Intro_3 = Instance.new("Frame"),
+	Title_6 = Instance.new("Frame"),
+	UICorner_19 = Instance.new("UICorner"),
+	TextLabel_67 = Instance.new("TextLabel"),
+	Body_3 = Instance.new("Frame"),
+	UICorner_20 = Instance.new("UICorner"),
+	TextLabel_68 = Instance.new("TextLabel"),
+	Next_2 = Instance.new("TextButton"),
+	UICorner_21 = Instance.new("UICorner"),
+	Back_2 = Instance.new("TextButton"),
+	UICorner_22 = Instance.new("UICorner"),
+	List_3 = Instance.new("ScrollingFrame"),
+	OffSale_3 = Instance.new("Frame"),
+	UIGridLayout_4 = Instance.new("UIGridLayout"),
+	Offsale_15 = Instance.new("ImageLabel"),
+	TextLabel_69 = Instance.new("TextLabel"),
+	TextLabel_70 = Instance.new("TextLabel"),
+	Scripts = Instance.new("Folder"),
+	Values = Instance.new("Folder"),
+	Buttons = Instance.new("Frame"),
+	Frame_7 = Instance.new("Frame"),
+	Toggle = Instance.new("TextButton"),
+	UICorner_23 = Instance.new("UICorner"),
+	Pumpkin = Instance.new("TextButton"),
+	UICorner_24 = Instance.new("UICorner"),
+	ImageLabel = Instance.new("ImageLabel"),
+	Hats = Instance.new("Frame"),
+	Skaters_2 = Instance.new("Frame"),
+	Pumpkin_2 = Instance.new("TextButton"),
+	UICorner_25 = Instance.new("UICorner"),
+	Start = Instance.new("Frame"),
+	Frame_8 = Instance.new("Frame"),
+	Panel = Instance.new("Frame"),
+	UICorner_26 = Instance.new("UICorner"),
+	Title_7 = Instance.new("TextLabel"),
+	Frame_9 = Instance.new("Frame"),
+	UICorner_27 = Instance.new("UICorner"),
+	Execute = Instance.new("TextButton"),
+	UICorner_28 = Instance.new("UICorner"),
+	Frame_10 = Instance.new("Frame"),
+	UICorner_29 = Instance.new("UICorner"),
+	ScrollingFrame = Instance.new("ScrollingFrame"),
+	Frame_11 = Instance.new("Frame"),
+	UIListLayout = Instance.new("UIListLayout"),
+	TextLabel_71 = Instance.new("TextLabel"),
+	TextLabel_72 = Instance.new("TextLabel"),
+	TextLabel_73 = Instance.new("TextLabel"),
+	TextLabel_74 = Instance.new("TextLabel"),
+	TextLabel_75 = Instance.new("TextLabel"),
+	Panel_2 = Instance.new("Frame"),
+	UICorner_30 = Instance.new("UICorner"),
+	Title_8 = Instance.new("TextLabel"),
+	Frame_12 = Instance.new("Frame"),
+	UICorner_31 = Instance.new("UICorner"),
+	Panel_3 = Instance.new("Frame"),
+	UICorner_32 = Instance.new("UICorner"),
+	UIListLayout_2 = Instance.new("UIListLayout"),
+	TextLabel_76 = Instance.new("TextLabel"),
+	TextLabel_77 = Instance.new("TextLabel"),
+	TextLabel_78 = Instance.new("TextLabel"),
+	Supported = Instance.new("TextLabel"),
+	UICorner_33 = Instance.new("UICorner"),
+	Menu = Instance.new("Frame"),
+	Panel_4 = Instance.new("Frame"),
+	UICorner_34 = Instance.new("UICorner"),
+	Title_9 = Instance.new("TextLabel"),
+	Top = Instance.new("Frame"),
+	UICorner_35 = Instance.new("UICorner"),
+	Frame_13 = Instance.new("Frame"),
+	UIGridLayout_5 = Instance.new("UIGridLayout"),
+	Universal = Instance.new("TextButton"),
+	Game = Instance.new("TextButton"),
+	AddOns = Instance.new("TextButton"),
+	Main_2 = Instance.new("Frame"),
+	UICorner_36 = Instance.new("UICorner"),
+	ScrollingFrame_2 = Instance.new("Frame"),
+	AddOns_2 = Instance.new("Frame"),
+	Title_10 = Instance.new("TextLabel"),
+	Frame_14 = Instance.new("Frame"),
+	UICorner_37 = Instance.new("UICorner"),
+	Frame_15 = Instance.new("Frame"),
+	UICorner_38 = Instance.new("UICorner"),
+	ScrollingFrame_3 = Instance.new("ScrollingFrame"),
+	Frame_16 = Instance.new("Frame"),
+	UIListLayout_3 = Instance.new("UIListLayout"),
+	RemoveFace = Instance.new("Frame"),
+	TextLabel_79 = Instance.new("TextLabel"),
+	Execute_2 = Instance.new("TextButton"),
+	UICorner_39 = Instance.new("UICorner"),
+	Dusekkar_2 = Instance.new("Frame"),
+	TextLabel_80 = Instance.new("TextLabel"),
+	Execute_3 = Instance.new("TextButton"),
+	UICorner_40 = Instance.new("UICorner"),
+	Requirements_2 = Instance.new("TextButton"),
+	UICorner_41 = Instance.new("UICorner"),
+	Frame_17 = Instance.new("Frame"),
+	TextLabel_81 = Instance.new("TextLabel"),
+	Requirements_3 = Instance.new("TextButton"),
+	UICorner_42 = Instance.new("UICorner"),
+	Execute_4 = Instance.new("TextButton"),
+	UICorner_43 = Instance.new("UICorner"),
+	Skaters_3 = Instance.new("Frame"),
+	TextLabel_82 = Instance.new("TextLabel"),
+	Execute_5 = Instance.new("TextButton"),
+	UICorner_44 = Instance.new("UICorner"),
+	Requirements_4 = Instance.new("TextButton"),
+	UICorner_45 = Instance.new("UICorner"),
+	Universal_2 = Instance.new("Frame"),
+	Universal_3 = Instance.new("ScrollingFrame"),
+	Frame_18 = Instance.new("Frame"),
+	Title_11 = Instance.new("TextLabel"),
+	Frame_19 = Instance.new("Frame"),
+	UICorner_46 = Instance.new("UICorner"),
+	Frame_20 = Instance.new("Frame"),
+	UICorner_47 = Instance.new("UICorner"),
+	Frame_21 = Instance.new("Frame"),
+	UICorner_48 = Instance.new("UICorner"),
+	Title_12 = Instance.new("TextLabel"),
+	Title_13 = Instance.new("TextLabel"),
+	Execute_6 = Instance.new("TextButton"),
+	UICorner_49 = Instance.new("UICorner"),
+	Frame_22 = Instance.new("Frame"),
+	UICorner_50 = Instance.new("UICorner"),
+	Title_14 = Instance.new("TextLabel"),
+	Title_15 = Instance.new("TextLabel"),
+	Execute_7 = Instance.new("TextButton"),
+	UICorner_51 = Instance.new("UICorner"),
+	Title_16 = Instance.new("TextLabel"),
+	Game_2 = Instance.new("Frame"),
+	Universal_4 = Instance.new("ScrollingFrame"),
+	Frame_23 = Instance.new("Frame"),
+	Title_17 = Instance.new("TextLabel"),
+	Frame_24 = Instance.new("Frame"),
+	UICorner_52 = Instance.new("UICorner"),
+	Frame_25 = Instance.new("Frame"),
+	UICorner_53 = Instance.new("UICorner"),
+	Title_18 = Instance.new("TextLabel"),
+	Close_4 = Instance.new("TextButton"),
+	UICorner_54 = Instance.new("UICorner"),
+}
+
+--Properties:
+
+ZurentiV1.ZurentiV1.Name = "ZurentiV1"
+ZurentiV1.ZurentiV1.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ZurentiV1.ZurentiV1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ZurentiV1.ZurentiV1.ResetOnSpawn = false
+
+ZurentiV1.Main.Name = "Main"
+ZurentiV1.Main.Parent = ZurentiV1.ZurentiV1
+ZurentiV1.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Main.BackgroundTransparency = 1.000
+ZurentiV1.Main.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Requirements.Name = "Requirements"
+ZurentiV1.Requirements.Parent = ZurentiV1.Main
+ZurentiV1.Requirements.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Requirements.BackgroundTransparency = 1.000
+ZurentiV1.Requirements.ClipsDescendants = true
+ZurentiV1.Requirements.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Pumpkins.Name = "Pumpkins"
+ZurentiV1.Pumpkins.Parent = ZurentiV1.Requirements
+ZurentiV1.Pumpkins.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Pumpkins.BackgroundTransparency = 1.000
+ZurentiV1.Pumpkins.Size = UDim2.new(1, 0, 1, 0)
+ZurentiV1.Pumpkins.Visible = false
+
+ZurentiV1.Required.Name = "Required"
+ZurentiV1.Required.Parent = ZurentiV1.Pumpkins
+ZurentiV1.Required.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Required.BackgroundTransparency = 1.000
+ZurentiV1.Required.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Limited.Name = "Limited"
+ZurentiV1.Limited.Parent = ZurentiV1.Required
+ZurentiV1.Limited.BackgroundColor3 = Color3.fromRGB(66, 151, 255)
+ZurentiV1.Limited.Position = UDim2.new(0.288710862, 0, 0.116515219, 0)
+ZurentiV1.Limited.Size = UDim2.new(0.209770352, 0, 0.0668147653, 0)
+ZurentiV1.Limited.Font = Enum.Font.Oswald
+ZurentiV1.Limited.Text = "LIMITED / OFFSALE"
+ZurentiV1.Limited.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Limited.TextScaled = true
+ZurentiV1.Limited.TextSize = 14.000
+ZurentiV1.Limited.TextWrapped = true
+
+ZurentiV1.UICorner.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner.Parent = ZurentiV1.Limited
+
+ZurentiV1.Title.Name = "Title"
+ZurentiV1.Title.Parent = ZurentiV1.Required
+ZurentiV1.Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title.BackgroundTransparency = 1.000
+ZurentiV1.Title.Position = UDim2.new(0.0780324861, 0, 0.0112774614, 0)
+ZurentiV1.Title.Size = UDim2.new(0.843253732, 0, 0.0818011314, 0)
+ZurentiV1.Title.ZIndex = 2
+ZurentiV1.Title.Font = Enum.Font.Oswald
+ZurentiV1.Title.Text = "REQUIRED ITEMS"
+ZurentiV1.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title.TextScaled = true
+ZurentiV1.Title.TextSize = 14.000
+ZurentiV1.Title.TextWrapped = true
+
+ZurentiV1.Frame.Parent = ZurentiV1.Title
+ZurentiV1.Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame.BorderSizePixel = 0
+ZurentiV1.Frame.Position = UDim2.new(0, 0, 0.979877174, 0)
+ZurentiV1.Frame.Size = UDim2.new(1.00999999, 0, 0.0799999982, 0)
+
+ZurentiV1.UICorner_2.CornerRadius = UDim.new(0.5, 0)
+ZurentiV1.UICorner_2.Parent = ZurentiV1.Frame
+
+ZurentiV1.Close.Name = "Close"
+ZurentiV1.Close.Parent = ZurentiV1.Required
+ZurentiV1.Close.BackgroundColor3 = Color3.fromRGB(255, 110, 112)
+ZurentiV1.Close.Position = UDim2.new(0.508483768, 0, 0.116515219, 0)
+ZurentiV1.Close.Size = UDim2.new(0.209770352, 0, 0.0668147653, 0)
+ZurentiV1.Close.Font = Enum.Font.Oswald
+ZurentiV1.Close.Text = "CLOSE"
+ZurentiV1.Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Close.TextScaled = true
+ZurentiV1.Close.TextSize = 14.000
+ZurentiV1.Close.TextWrapped = true
+
+ZurentiV1.UICorner_3.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_3.Parent = ZurentiV1.Close
+
+ZurentiV1.Intro.Name = "Intro"
+ZurentiV1.Intro.Parent = ZurentiV1.Pumpkins
+ZurentiV1.Intro.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Intro.BackgroundTransparency = 1.000
+ZurentiV1.Intro.Position = UDim2.new(0.184, 0, 0.172999993, 0)
+ZurentiV1.Intro.Size = UDim2.new(0.632598519, 0, 0.653987706, 0)
+ZurentiV1.Intro.Visible = false
+
+ZurentiV1.Title_2.Name = "Title"
+ZurentiV1.Title_2.Parent = ZurentiV1.Intro
+ZurentiV1.Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_2.Position = UDim2.new(0.165786698, 0, 0.213883668, 0)
+ZurentiV1.Title_2.Size = UDim2.new(0.667370617, 0, 0.0994371474, 0)
+
+ZurentiV1.UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
+ZurentiV1.UICorner_4.Parent = ZurentiV1.Title_2
+
+ZurentiV1.TextLabel.Parent = ZurentiV1.Title_2
+ZurentiV1.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel.BorderSizePixel = 0
+ZurentiV1.TextLabel.Size = UDim2.new(1, 0, 1, 0)
+ZurentiV1.TextLabel.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel.Text = "SKATER SCRIPT REQUIREMENTS"
+ZurentiV1.TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel.TextScaled = true
+ZurentiV1.TextLabel.TextSize = 14.000
+ZurentiV1.TextLabel.TextWrapped = true
+
+ZurentiV1.Body.Name = "Body"
+ZurentiV1.Body.Parent = ZurentiV1.Intro
+ZurentiV1.Body.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Body.Position = UDim2.new(0.165786698, 0, 0.33208254, 0)
+ZurentiV1.Body.Size = UDim2.new(0.667370617, 0, 0.283302069, 0)
+
+ZurentiV1.UICorner_5.CornerRadius = UDim.new(0.0500000007, 0)
+ZurentiV1.UICorner_5.Parent = ZurentiV1.Body
+
+ZurentiV1.TextLabel_2.Parent = ZurentiV1.Body
+ZurentiV1.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_2.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_2.BorderSizePixel = 0
+ZurentiV1.TextLabel_2.Position = UDim2.new(0.03164557, 0, 0.11070545, 0)
+ZurentiV1.TextLabel_2.Size = UDim2.new(0.938291132, 0, 0.772732973, 0)
+ZurentiV1.TextLabel_2.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_2.Text = "YOU ONLY NEED ONE OF THE HATS LISTED"
+ZurentiV1.TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_2.TextScaled = true
+ZurentiV1.TextLabel_2.TextSize = 14.000
+ZurentiV1.TextLabel_2.TextWrapped = true
+
+ZurentiV1.TextButton.Parent = ZurentiV1.Intro
+ZurentiV1.TextButton.BackgroundColor3 = Color3.fromRGB(115, 255, 143)
+ZurentiV1.TextButton.Position = UDim2.new(0.621964097, 0, 0.632270157, 0)
+ZurentiV1.TextButton.Size = UDim2.new(0.211193249, 0, 0.0938086286, 0)
+ZurentiV1.TextButton.Font = Enum.Font.Oswald
+ZurentiV1.TextButton.Text = "NEXT"
+ZurentiV1.TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextButton.TextScaled = true
+ZurentiV1.TextButton.TextSize = 14.000
+ZurentiV1.TextButton.TextWrapped = true
+
+ZurentiV1.UICorner_6.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_6.Parent = ZurentiV1.TextButton
+
+ZurentiV1.TextButton_2.Parent = ZurentiV1.Intro
+ZurentiV1.TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 113, 108)
+ZurentiV1.TextButton_2.Position = UDim2.new(0.401267141, 0, 0.632270157, 0)
+ZurentiV1.TextButton_2.Size = UDim2.new(0.211193249, 0, 0.0938086286, 0)
+ZurentiV1.TextButton_2.Font = Enum.Font.Oswald
+ZurentiV1.TextButton_2.Text = "BACK"
+ZurentiV1.TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextButton_2.TextScaled = true
+ZurentiV1.TextButton_2.TextSize = 14.000
+ZurentiV1.TextButton_2.TextWrapped = true
+
+ZurentiV1.UICorner_7.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_7.Parent = ZurentiV1.TextButton_2
+
+ZurentiV1.List.Name = "List"
+ZurentiV1.List.Parent = ZurentiV1.Pumpkins
+ZurentiV1.List.Active = true
+ZurentiV1.List.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.List.BackgroundTransparency = 1.000
+ZurentiV1.List.BorderSizePixel = 0
+ZurentiV1.List.Position = UDim2.new(0.174402267, 0, 0.190184042, 0)
+ZurentiV1.List.Size = UDim2.new(0.648630619, 0, 0.769325137, 0)
+ZurentiV1.List.CanvasSize = UDim2.new(0, 0, 4, 0)
+
+ZurentiV1.OffSale.Name = "Off Sale"
+ZurentiV1.OffSale.Parent = ZurentiV1.List
+ZurentiV1.OffSale.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.OffSale.BackgroundTransparency = 1.000
+ZurentiV1.OffSale.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Limited_2.Name = "Limited"
+ZurentiV1.Limited_2.Parent = ZurentiV1.OffSale
+ZurentiV1.Limited_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_2.BackgroundTransparency = 1.000
+ZurentiV1.Limited_2.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_2.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_2.Image = "rbxassetid://9459647260"
+ZurentiV1.Limited_2.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_3.Parent = ZurentiV1.Limited_2
+ZurentiV1.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_3.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_3.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_3.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_3.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_3.Text = "Eerie"
+ZurentiV1.TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_3.TextScaled = true
+ZurentiV1.TextLabel_3.TextSize = 14.000
+ZurentiV1.TextLabel_3.TextWrapped = true
+
+ZurentiV1.TextLabel_4.Parent = ZurentiV1.Limited_2
+ZurentiV1.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_4.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_4.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_4.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_4.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_4.Text = "Limited"
+ZurentiV1.TextLabel_4.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_4.TextScaled = true
+ZurentiV1.TextLabel_4.TextSize = 14.000
+ZurentiV1.TextLabel_4.TextWrapped = true
+
+ZurentiV1.UIGridLayout.Parent = ZurentiV1.OffSale
+ZurentiV1.UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+ZurentiV1.UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+ZurentiV1.UIGridLayout.CellPadding = UDim2.new(0.0500000007, 0, 0, 0)
+ZurentiV1.UIGridLayout.CellSize = UDim2.new(0.200000003, 0, 0.100000001, 0)
+
+ZurentiV1.Limited_3.Name = "Limited"
+ZurentiV1.Limited_3.Parent = ZurentiV1.OffSale
+ZurentiV1.Limited_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_3.BackgroundTransparency = 1.000
+ZurentiV1.Limited_3.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_3.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_3.Image = "rbxassetid://9459645629"
+ZurentiV1.Limited_3.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_5.Parent = ZurentiV1.Limited_3
+ZurentiV1.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_5.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_5.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_5.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_5.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_5.Text = "Ghosdeeri"
+ZurentiV1.TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_5.TextScaled = true
+ZurentiV1.TextLabel_5.TextSize = 14.000
+ZurentiV1.TextLabel_5.TextWrapped = true
+
+ZurentiV1.TextLabel_6.Parent = ZurentiV1.Limited_3
+ZurentiV1.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_6.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_6.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_6.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_6.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_6.Text = "Limited"
+ZurentiV1.TextLabel_6.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_6.TextScaled = true
+ZurentiV1.TextLabel_6.TextSize = 14.000
+ZurentiV1.TextLabel_6.TextWrapped = true
+
+ZurentiV1.Limited_4.Name = "Limited"
+ZurentiV1.Limited_4.Parent = ZurentiV1.OffSale
+ZurentiV1.Limited_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_4.BackgroundTransparency = 1.000
+ZurentiV1.Limited_4.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_4.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_4.Image = "rbxassetid://9459644894"
+ZurentiV1.Limited_4.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_7.Parent = ZurentiV1.Limited_4
+ZurentiV1.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_7.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_7.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_7.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_7.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_7.Text = "Darkseed"
+ZurentiV1.TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_7.TextScaled = true
+ZurentiV1.TextLabel_7.TextSize = 14.000
+ZurentiV1.TextLabel_7.TextWrapped = true
+
+ZurentiV1.TextLabel_8.Parent = ZurentiV1.Limited_4
+ZurentiV1.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_8.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_8.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_8.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_8.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_8.Text = "Limited"
+ZurentiV1.TextLabel_8.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_8.TextScaled = true
+ZurentiV1.TextLabel_8.TextSize = 14.000
+ZurentiV1.TextLabel_8.TextWrapped = true
+
+ZurentiV1.Limited_5.Name = "Limited"
+ZurentiV1.Limited_5.Parent = ZurentiV1.OffSale
+ZurentiV1.Limited_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_5.BackgroundTransparency = 1.000
+ZurentiV1.Limited_5.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_5.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_5.Image = "rbxassetid://9459643618"
+ZurentiV1.Limited_5.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_9.Parent = ZurentiV1.Limited_5
+ZurentiV1.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_9.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_9.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_9.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_9.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_9.Text = "Blizzaria"
+ZurentiV1.TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_9.TextScaled = true
+ZurentiV1.TextLabel_9.TextSize = 14.000
+ZurentiV1.TextLabel_9.TextWrapped = true
+
+ZurentiV1.TextLabel_10.Parent = ZurentiV1.Limited_5
+ZurentiV1.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_10.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_10.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_10.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_10.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_10.Text = "Limited"
+ZurentiV1.TextLabel_10.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_10.TextScaled = true
+ZurentiV1.TextLabel_10.TextSize = 14.000
+ZurentiV1.TextLabel_10.TextWrapped = true
+
+ZurentiV1.Offsale.Name = "Offsale"
+ZurentiV1.Offsale.Parent = ZurentiV1.OffSale
+ZurentiV1.Offsale.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale.BackgroundTransparency = 1.000
+ZurentiV1.Offsale.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale.Image = "rbxassetid://9459649503"
+ZurentiV1.Offsale.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_11.Parent = ZurentiV1.Offsale
+ZurentiV1.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_11.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_11.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_11.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_11.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_11.Text = "Dusekkar"
+ZurentiV1.TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_11.TextScaled = true
+ZurentiV1.TextLabel_11.TextSize = 14.000
+ZurentiV1.TextLabel_11.TextWrapped = true
+
+ZurentiV1.TextLabel_12.Parent = ZurentiV1.Offsale
+ZurentiV1.TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_12.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_12.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_12.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_12.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_12.Text = "Off-Sale"
+ZurentiV1.TextLabel_12.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_12.TextScaled = true
+ZurentiV1.TextLabel_12.TextSize = 14.000
+ZurentiV1.TextLabel_12.TextWrapped = true
+
+ZurentiV1.Offsale_2.Name = "Offsale"
+ZurentiV1.Offsale_2.Parent = ZurentiV1.OffSale
+ZurentiV1.Offsale_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_2.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_2.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_2.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_2.Image = "rbxassetid://9459650692"
+ZurentiV1.Offsale_2.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_13.Parent = ZurentiV1.Offsale_2
+ZurentiV1.TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_13.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_13.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_13.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_13.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_13.Text = "Doomsekkar"
+ZurentiV1.TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_13.TextScaled = true
+ZurentiV1.TextLabel_13.TextSize = 14.000
+ZurentiV1.TextLabel_13.TextWrapped = true
+
+ZurentiV1.TextLabel_14.Parent = ZurentiV1.Offsale_2
+ZurentiV1.TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_14.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_14.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_14.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_14.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_14.Text = "Off-Sale"
+ZurentiV1.TextLabel_14.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_14.TextScaled = true
+ZurentiV1.TextLabel_14.TextSize = 14.000
+ZurentiV1.TextLabel_14.TextWrapped = true
+
+ZurentiV1.Offsale_3.Name = "Offsale"
+ZurentiV1.Offsale_3.Parent = ZurentiV1.OffSale
+ZurentiV1.Offsale_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_3.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_3.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_3.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_3.Image = "rbxassetid://9459652026"
+ZurentiV1.Offsale_3.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_15.Parent = ZurentiV1.Offsale_3
+ZurentiV1.TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_15.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_15.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_15.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_15.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_15.Text = "Sparkletime Pumpkin"
+ZurentiV1.TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_15.TextScaled = true
+ZurentiV1.TextLabel_15.TextSize = 14.000
+ZurentiV1.TextLabel_15.TextWrapped = true
+
+ZurentiV1.TextLabel_16.Parent = ZurentiV1.Offsale_3
+ZurentiV1.TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_16.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_16.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_16.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_16.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_16.Text = "Off-Sale"
+ZurentiV1.TextLabel_16.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_16.TextScaled = true
+ZurentiV1.TextLabel_16.TextSize = 14.000
+ZurentiV1.TextLabel_16.TextWrapped = true
+
+ZurentiV1.Offsale_4.Name = "Offsale"
+ZurentiV1.Offsale_4.Parent = ZurentiV1.OffSale
+ZurentiV1.Offsale_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_4.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_4.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_4.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_4.Image = "rbxassetid://9459653410"
+ZurentiV1.Offsale_4.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_17.Parent = ZurentiV1.Offsale_4
+ZurentiV1.TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_17.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_17.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_17.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_17.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_17.Text = "Classic Pumpkin"
+ZurentiV1.TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_17.TextScaled = true
+ZurentiV1.TextLabel_17.TextSize = 14.000
+ZurentiV1.TextLabel_17.TextWrapped = true
+
+ZurentiV1.TextLabel_18.Parent = ZurentiV1.Offsale_4
+ZurentiV1.TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_18.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_18.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_18.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_18.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_18.Text = "Off-Sale"
+ZurentiV1.TextLabel_18.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_18.TextScaled = true
+ZurentiV1.TextLabel_18.TextSize = 14.000
+ZurentiV1.TextLabel_18.TextWrapped = true
+
+ZurentiV1.Skaters.Name = "Skaters"
+ZurentiV1.Skaters.Parent = ZurentiV1.Requirements
+ZurentiV1.Skaters.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Skaters.BackgroundTransparency = 1.000
+ZurentiV1.Skaters.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Required_2.Name = "Required"
+ZurentiV1.Required_2.Parent = ZurentiV1.Skaters
+ZurentiV1.Required_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Required_2.BackgroundTransparency = 1.000
+ZurentiV1.Required_2.Position = UDim2.new(0, 0, -1, 0)
+ZurentiV1.Required_2.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Limited_6.Name = "Limited"
+ZurentiV1.Limited_6.Parent = ZurentiV1.Required_2
+ZurentiV1.Limited_6.BackgroundColor3 = Color3.fromRGB(66, 151, 255)
+ZurentiV1.Limited_6.Position = UDim2.new(0.394262075, 0, 0.109570771, 0)
+ZurentiV1.Limited_6.Size = UDim2.new(0.209770352, 0, 0.0668147653, 0)
+ZurentiV1.Limited_6.Font = Enum.Font.Oswald
+ZurentiV1.Limited_6.Text = "LIMITED / OFFSALE"
+ZurentiV1.Limited_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Limited_6.TextScaled = true
+ZurentiV1.Limited_6.TextSize = 14.000
+ZurentiV1.Limited_6.TextWrapped = true
+
+ZurentiV1.UICorner_8.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_8.Parent = ZurentiV1.Limited_6
+
+ZurentiV1.Onsale.Name = "Onsale"
+ZurentiV1.Onsale.Parent = ZurentiV1.Required_2
+ZurentiV1.Onsale.BackgroundColor3 = Color3.fromRGB(115, 255, 143)
+ZurentiV1.Onsale.Position = UDim2.new(0.174402267, 0, 0.109570771, 0)
+ZurentiV1.Onsale.Size = UDim2.new(0.209770352, 0, 0.0668147653, 0)
+ZurentiV1.Onsale.Font = Enum.Font.Oswald
+ZurentiV1.Onsale.Text = "ONSALE"
+ZurentiV1.Onsale.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Onsale.TextScaled = true
+ZurentiV1.Onsale.TextSize = 14.000
+ZurentiV1.Onsale.TextWrapped = true
+
+ZurentiV1.UICorner_9.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_9.Parent = ZurentiV1.Onsale
+
+ZurentiV1.Title_3.Name = "Title"
+ZurentiV1.Title_3.Parent = ZurentiV1.Required_2
+ZurentiV1.Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_3.BackgroundTransparency = 1.000
+ZurentiV1.Title_3.Position = UDim2.new(0.0780324861, 0, 0.0112774614, 0)
+ZurentiV1.Title_3.Size = UDim2.new(0.843253732, 0, 0.0818011314, 0)
+ZurentiV1.Title_3.ZIndex = 2
+ZurentiV1.Title_3.Font = Enum.Font.Oswald
+ZurentiV1.Title_3.Text = "REQUIRED ITEMS"
+ZurentiV1.Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_3.TextScaled = true
+ZurentiV1.Title_3.TextSize = 14.000
+ZurentiV1.Title_3.TextWrapped = true
+
+ZurentiV1.Frame_2.Parent = ZurentiV1.Title_3
+ZurentiV1.Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_2.BorderSizePixel = 0
+ZurentiV1.Frame_2.Position = UDim2.new(0, 0, 0.979877174, 0)
+ZurentiV1.Frame_2.Size = UDim2.new(1.00999999, 0, 0.0799999982, 0)
+
+ZurentiV1.UICorner_10.CornerRadius = UDim.new(0.5, 0)
+ZurentiV1.UICorner_10.Parent = ZurentiV1.Frame_2
+
+ZurentiV1.Close_2.Name = "Close"
+ZurentiV1.Close_2.Parent = ZurentiV1.Required_2
+ZurentiV1.Close_2.BackgroundColor3 = Color3.fromRGB(255, 110, 112)
+ZurentiV1.Close_2.Position = UDim2.new(0.614034951, 0, 0.109570771, 0)
+ZurentiV1.Close_2.Size = UDim2.new(0.209770352, 0, 0.0668147653, 0)
+ZurentiV1.Close_2.Font = Enum.Font.Oswald
+ZurentiV1.Close_2.Text = "CLOSE"
+ZurentiV1.Close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Close_2.TextScaled = true
+ZurentiV1.Close_2.TextSize = 14.000
+ZurentiV1.Close_2.TextWrapped = true
+
+ZurentiV1.UICorner_11.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_11.Parent = ZurentiV1.Close_2
+
+ZurentiV1.Intro_2.Name = "Intro"
+ZurentiV1.Intro_2.Parent = ZurentiV1.Skaters
+ZurentiV1.Intro_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Intro_2.BackgroundTransparency = 1.000
+ZurentiV1.Intro_2.Position = UDim2.new(0.184, 0, -1.17299998, 0)
+ZurentiV1.Intro_2.Size = UDim2.new(0.632598519, 0, 0.653987706, 0)
+
+ZurentiV1.Title_4.Name = "Title"
+ZurentiV1.Title_4.Parent = ZurentiV1.Intro_2
+ZurentiV1.Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_4.Position = UDim2.new(0.165786698, 0, 0.213883668, 0)
+ZurentiV1.Title_4.Size = UDim2.new(0.667370617, 0, 0.0994371474, 0)
+
+ZurentiV1.UICorner_12.CornerRadius = UDim.new(0.200000003, 0)
+ZurentiV1.UICorner_12.Parent = ZurentiV1.Title_4
+
+ZurentiV1.TextLabel_19.Parent = ZurentiV1.Title_4
+ZurentiV1.TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_19.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_19.BorderSizePixel = 0
+ZurentiV1.TextLabel_19.Size = UDim2.new(1, 0, 1, 0)
+ZurentiV1.TextLabel_19.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_19.Text = "SKATER SCRIPT REQUIREMENTS"
+ZurentiV1.TextLabel_19.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_19.TextScaled = true
+ZurentiV1.TextLabel_19.TextSize = 14.000
+ZurentiV1.TextLabel_19.TextWrapped = true
+
+ZurentiV1.Body_2.Name = "Body"
+ZurentiV1.Body_2.Parent = ZurentiV1.Intro_2
+ZurentiV1.Body_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Body_2.Position = UDim2.new(0.165786698, 0, 0.33208254, 0)
+ZurentiV1.Body_2.Size = UDim2.new(0.667370617, 0, 0.283302069, 0)
+
+ZurentiV1.UICorner_13.CornerRadius = UDim.new(0.0500000007, 0)
+ZurentiV1.UICorner_13.Parent = ZurentiV1.Body_2
+
+ZurentiV1.TextLabel_20.Parent = ZurentiV1.Body_2
+ZurentiV1.TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_20.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_20.BorderSizePixel = 0
+ZurentiV1.TextLabel_20.Position = UDim2.new(0.03164557, 0, 0.11070545, 0)
+ZurentiV1.TextLabel_20.Size = UDim2.new(0.938291132, 0, 0.772732973, 0)
+ZurentiV1.TextLabel_20.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_20.Text = "YOU ONLY NEED ONE OF THE HATS LISTED"
+ZurentiV1.TextLabel_20.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_20.TextScaled = true
+ZurentiV1.TextLabel_20.TextSize = 14.000
+ZurentiV1.TextLabel_20.TextWrapped = true
+
+ZurentiV1.Next.Name = "Next"
+ZurentiV1.Next.Parent = ZurentiV1.Intro_2
+ZurentiV1.Next.BackgroundColor3 = Color3.fromRGB(115, 255, 143)
+ZurentiV1.Next.Position = UDim2.new(0.621964097, 0, 0.632270157, 0)
+ZurentiV1.Next.Size = UDim2.new(0.211193249, 0, 0.0938086286, 0)
+ZurentiV1.Next.Font = Enum.Font.Oswald
+ZurentiV1.Next.Text = "NEXT"
+ZurentiV1.Next.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Next.TextScaled = true
+ZurentiV1.Next.TextSize = 14.000
+ZurentiV1.Next.TextWrapped = true
+
+ZurentiV1.UICorner_14.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_14.Parent = ZurentiV1.Next
+
+ZurentiV1.Back.Name = "Back"
+ZurentiV1.Back.Parent = ZurentiV1.Intro_2
+ZurentiV1.Back.BackgroundColor3 = Color3.fromRGB(255, 113, 108)
+ZurentiV1.Back.Position = UDim2.new(0.401267141, 0, 0.632270157, 0)
+ZurentiV1.Back.Size = UDim2.new(0.211193249, 0, 0.0938086286, 0)
+ZurentiV1.Back.Font = Enum.Font.Oswald
+ZurentiV1.Back.Text = "BACK"
+ZurentiV1.Back.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Back.TextScaled = true
+ZurentiV1.Back.TextSize = 14.000
+ZurentiV1.Back.TextWrapped = true
+
+ZurentiV1.UICorner_15.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_15.Parent = ZurentiV1.Back
+
+ZurentiV1.List_2.Name = "List"
+ZurentiV1.List_2.Parent = ZurentiV1.Skaters
+ZurentiV1.List_2.Active = true
+ZurentiV1.List_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.List_2.BackgroundTransparency = 1.000
+ZurentiV1.List_2.BorderSizePixel = 0
+ZurentiV1.List_2.Position = UDim2.new(-1.17400002, 0, 0.189999998, 0)
+ZurentiV1.List_2.Size = UDim2.new(0.648630619, 0, 0.769325137, 0)
+ZurentiV1.List_2.CanvasSize = UDim2.new(0, 0, 4, 0)
+
+ZurentiV1.OnSale.Name = "On Sale"
+ZurentiV1.OnSale.Parent = ZurentiV1.List_2
+ZurentiV1.OnSale.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.OnSale.BackgroundTransparency = 1.000
+ZurentiV1.OnSale.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Frame_3.Name = "Frame"
+ZurentiV1.Frame_3.Parent = ZurentiV1.OnSale
+ZurentiV1.Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_3.BackgroundTransparency = 1.000
+ZurentiV1.Frame_3.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Frame_3.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Frame_3.Image = "rbxassetid://9438344405"
+ZurentiV1.Frame_3.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_21.Parent = ZurentiV1.Frame_3
+ZurentiV1.TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_21.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_21.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_21.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_21.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_21.Text = "Canada Styles"
+ZurentiV1.TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_21.TextScaled = true
+ZurentiV1.TextLabel_21.TextSize = 14.000
+ZurentiV1.TextLabel_21.TextWrapped = true
+
+ZurentiV1.TextLabel_22.Parent = ZurentiV1.Frame_3
+ZurentiV1.TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_22.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_22.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_22.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_22.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_22.Text = "15 Robux"
+ZurentiV1.TextLabel_22.TextColor3 = Color3.fromRGB(96, 255, 120)
+ZurentiV1.TextLabel_22.TextScaled = true
+ZurentiV1.TextLabel_22.TextSize = 14.000
+ZurentiV1.TextLabel_22.TextWrapped = true
+
+ZurentiV1.UIGridLayout_2.Parent = ZurentiV1.OnSale
+ZurentiV1.UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+ZurentiV1.UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+ZurentiV1.UIGridLayout_2.CellPadding = UDim2.new(0.00999999978, 0, 0, 0)
+ZurentiV1.UIGridLayout_2.CellSize = UDim2.new(0.200000003, 0, 0.100000001, 0)
+
+ZurentiV1.Frame_4.Name = "Frame"
+ZurentiV1.Frame_4.Parent = ZurentiV1.OnSale
+ZurentiV1.Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_4.BackgroundTransparency = 1.000
+ZurentiV1.Frame_4.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Frame_4.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Frame_4.Image = "rbxassetid://9438376438"
+ZurentiV1.Frame_4.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_23.Parent = ZurentiV1.Frame_4
+ZurentiV1.TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_23.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_23.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_23.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_23.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_23.Text = "50 Robux"
+ZurentiV1.TextLabel_23.TextColor3 = Color3.fromRGB(96, 255, 120)
+ZurentiV1.TextLabel_23.TextScaled = true
+ZurentiV1.TextLabel_23.TextSize = 14.000
+ZurentiV1.TextLabel_23.TextWrapped = true
+
+ZurentiV1.TextLabel_24.Parent = ZurentiV1.Frame_4
+ZurentiV1.TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_24.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_24.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_24.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_24.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_24.Text = "Duck Cap"
+ZurentiV1.TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_24.TextScaled = true
+ZurentiV1.TextLabel_24.TextSize = 14.000
+ZurentiV1.TextLabel_24.TextWrapped = true
+
+ZurentiV1.Frame_5.Name = "Frame"
+ZurentiV1.Frame_5.Parent = ZurentiV1.OnSale
+ZurentiV1.Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_5.BackgroundTransparency = 1.000
+ZurentiV1.Frame_5.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Frame_5.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Frame_5.Image = "rbxassetid://9438392295"
+ZurentiV1.Frame_5.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_25.Parent = ZurentiV1.Frame_5
+ZurentiV1.TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_25.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_25.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_25.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_25.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_25.Text = "135 Robux"
+ZurentiV1.TextLabel_25.TextColor3 = Color3.fromRGB(96, 255, 120)
+ZurentiV1.TextLabel_25.TextScaled = true
+ZurentiV1.TextLabel_25.TextSize = 14.000
+ZurentiV1.TextLabel_25.TextWrapped = true
+
+ZurentiV1.TextLabel_26.Parent = ZurentiV1.Frame_5
+ZurentiV1.TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_26.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_26.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_26.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_26.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_26.Text = "RBX Skater"
+ZurentiV1.TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_26.TextScaled = true
+ZurentiV1.TextLabel_26.TextSize = 14.000
+ZurentiV1.TextLabel_26.TextWrapped = true
+
+ZurentiV1.OffSale_2.Name = "Off Sale"
+ZurentiV1.OffSale_2.Parent = ZurentiV1.List_2
+ZurentiV1.OffSale_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.OffSale_2.BackgroundTransparency = 1.000
+ZurentiV1.OffSale_2.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Limited_7.Name = "Limited"
+ZurentiV1.Limited_7.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Limited_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_7.BackgroundTransparency = 1.000
+ZurentiV1.Limited_7.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_7.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_7.Image = "rbxassetid://9438420751"
+ZurentiV1.Limited_7.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_27.Parent = ZurentiV1.Limited_7
+ZurentiV1.TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_27.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_27.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_27.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_27.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_27.Text = "Euro 180"
+ZurentiV1.TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_27.TextScaled = true
+ZurentiV1.TextLabel_27.TextSize = 14.000
+ZurentiV1.TextLabel_27.TextWrapped = true
+
+ZurentiV1.TextLabel_28.Parent = ZurentiV1.Limited_7
+ZurentiV1.TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_28.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_28.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_28.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_28.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_28.Text = "Limited"
+ZurentiV1.TextLabel_28.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_28.TextScaled = true
+ZurentiV1.TextLabel_28.TextSize = 14.000
+ZurentiV1.TextLabel_28.TextWrapped = true
+
+ZurentiV1.UIGridLayout_3.Parent = ZurentiV1.OffSale_2
+ZurentiV1.UIGridLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+ZurentiV1.UIGridLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+ZurentiV1.UIGridLayout_3.CellPadding = UDim2.new(0.0500000007, 0, 0, 0)
+ZurentiV1.UIGridLayout_3.CellSize = UDim2.new(0.200000003, 0, 0.100000001, 0)
+
+ZurentiV1.Limited_8.Name = "Limited"
+ZurentiV1.Limited_8.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Limited_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_8.BackgroundTransparency = 1.000
+ZurentiV1.Limited_8.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_8.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_8.Image = "rbxassetid://9438421891"
+ZurentiV1.Limited_8.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_29.Parent = ZurentiV1.Limited_8
+ZurentiV1.TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_29.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_29.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_29.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_29.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_29.Text = "Red Grind"
+ZurentiV1.TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_29.TextScaled = true
+ZurentiV1.TextLabel_29.TextSize = 14.000
+ZurentiV1.TextLabel_29.TextWrapped = true
+
+ZurentiV1.TextLabel_30.Parent = ZurentiV1.Limited_8
+ZurentiV1.TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_30.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_30.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_30.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_30.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_30.Text = "Limited"
+ZurentiV1.TextLabel_30.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_30.TextScaled = true
+ZurentiV1.TextLabel_30.TextSize = 14.000
+ZurentiV1.TextLabel_30.TextWrapped = true
+
+ZurentiV1.Limited_9.Name = "Limited"
+ZurentiV1.Limited_9.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Limited_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_9.BackgroundTransparency = 1.000
+ZurentiV1.Limited_9.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_9.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_9.Image = "rbxassetid://9438423287"
+ZurentiV1.Limited_9.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_31.Parent = ZurentiV1.Limited_9
+ZurentiV1.TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_31.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_31.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_31.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_31.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_31.Text = "Purple Indy"
+ZurentiV1.TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_31.TextScaled = true
+ZurentiV1.TextLabel_31.TextSize = 14.000
+ZurentiV1.TextLabel_31.TextWrapped = true
+
+ZurentiV1.TextLabel_32.Parent = ZurentiV1.Limited_9
+ZurentiV1.TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_32.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_32.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_32.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_32.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_32.Text = "Limited"
+ZurentiV1.TextLabel_32.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_32.TextScaled = true
+ZurentiV1.TextLabel_32.TextSize = 14.000
+ZurentiV1.TextLabel_32.TextWrapped = true
+
+ZurentiV1.Limited_10.Name = "Limited"
+ZurentiV1.Limited_10.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Limited_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_10.BackgroundTransparency = 1.000
+ZurentiV1.Limited_10.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_10.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_10.Image = "rbxassetid://9438425286"
+ZurentiV1.Limited_10.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_33.Parent = ZurentiV1.Limited_10
+ZurentiV1.TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_33.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_33.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_33.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_33.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_33.Text = "Star Tailslide"
+ZurentiV1.TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_33.TextScaled = true
+ZurentiV1.TextLabel_33.TextSize = 14.000
+ZurentiV1.TextLabel_33.TextWrapped = true
+
+ZurentiV1.TextLabel_34.Parent = ZurentiV1.Limited_10
+ZurentiV1.TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_34.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_34.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_34.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_34.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_34.Text = "Limited"
+ZurentiV1.TextLabel_34.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_34.TextScaled = true
+ZurentiV1.TextLabel_34.TextSize = 14.000
+ZurentiV1.TextLabel_34.TextWrapped = true
+
+ZurentiV1.Limited_11.Name = "Limited"
+ZurentiV1.Limited_11.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Limited_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_11.BackgroundTransparency = 1.000
+ZurentiV1.Limited_11.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_11.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_11.Image = "rbxassetid://9438427068"
+ZurentiV1.Limited_11.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_35.Parent = ZurentiV1.Limited_11
+ZurentiV1.TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_35.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_35.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_35.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_35.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_35.Text = "Gold Ollie"
+ZurentiV1.TextLabel_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_35.TextScaled = true
+ZurentiV1.TextLabel_35.TextSize = 14.000
+ZurentiV1.TextLabel_35.TextWrapped = true
+
+ZurentiV1.TextLabel_36.Parent = ZurentiV1.Limited_11
+ZurentiV1.TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_36.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_36.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_36.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_36.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_36.Text = "Limited"
+ZurentiV1.TextLabel_36.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_36.TextScaled = true
+ZurentiV1.TextLabel_36.TextSize = 14.000
+ZurentiV1.TextLabel_36.TextWrapped = true
+
+ZurentiV1.Limited_12.Name = "Limited"
+ZurentiV1.Limited_12.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Limited_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_12.BackgroundTransparency = 1.000
+ZurentiV1.Limited_12.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_12.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_12.Image = "rbxassetid://9438429456"
+ZurentiV1.Limited_12.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_37.Parent = ZurentiV1.Limited_12
+ZurentiV1.TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_37.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_37.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_37.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_37.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_37.Text = "Front Stand"
+ZurentiV1.TextLabel_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_37.TextScaled = true
+ZurentiV1.TextLabel_37.TextSize = 14.000
+ZurentiV1.TextLabel_37.TextWrapped = true
+
+ZurentiV1.TextLabel_38.Parent = ZurentiV1.Limited_12
+ZurentiV1.TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_38.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_38.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_38.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_38.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_38.Text = "Limited"
+ZurentiV1.TextLabel_38.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_38.TextScaled = true
+ZurentiV1.TextLabel_38.TextSize = 14.000
+ZurentiV1.TextLabel_38.TextWrapped = true
+
+ZurentiV1.Limited_13.Name = "Limited"
+ZurentiV1.Limited_13.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Limited_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_13.BackgroundTransparency = 1.000
+ZurentiV1.Limited_13.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_13.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_13.Image = "rbxassetid://9438430593"
+ZurentiV1.Limited_13.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_39.Parent = ZurentiV1.Limited_13
+ZurentiV1.TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_39.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_39.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_39.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_39.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_39.Text = "Green Sidewinder"
+ZurentiV1.TextLabel_39.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_39.TextScaled = true
+ZurentiV1.TextLabel_39.TextSize = 14.000
+ZurentiV1.TextLabel_39.TextWrapped = true
+
+ZurentiV1.TextLabel_40.Parent = ZurentiV1.Limited_13
+ZurentiV1.TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_40.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_40.Position = UDim2.new(0, 0, 0.995555222, 0)
+ZurentiV1.TextLabel_40.Size = UDim2.new(1, 0, 0.145830736, 0)
+ZurentiV1.TextLabel_40.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_40.Text = "Limited"
+ZurentiV1.TextLabel_40.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_40.TextScaled = true
+ZurentiV1.TextLabel_40.TextSize = 14.000
+ZurentiV1.TextLabel_40.TextWrapped = true
+
+ZurentiV1.Limited_14.Name = "Limited"
+ZurentiV1.Limited_14.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Limited_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_14.BackgroundTransparency = 1.000
+ZurentiV1.Limited_14.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_14.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_14.Image = "rbxassetid://9438432936"
+ZurentiV1.Limited_14.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_41.Parent = ZurentiV1.Limited_14
+ZurentiV1.TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_41.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_41.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_41.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_41.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_41.Text = "Brighteyes' Halloween"
+ZurentiV1.TextLabel_41.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_41.TextScaled = true
+ZurentiV1.TextLabel_41.TextSize = 14.000
+ZurentiV1.TextLabel_41.TextWrapped = true
+
+ZurentiV1.TextLabel_42.Parent = ZurentiV1.Limited_14
+ZurentiV1.TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_42.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_42.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_42.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_42.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_42.Text = "Limited"
+ZurentiV1.TextLabel_42.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_42.TextScaled = true
+ZurentiV1.TextLabel_42.TextSize = 14.000
+ZurentiV1.TextLabel_42.TextWrapped = true
+
+ZurentiV1.Limited_15.Name = "Limited"
+ZurentiV1.Limited_15.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Limited_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_15.BackgroundTransparency = 1.000
+ZurentiV1.Limited_15.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_15.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_15.Image = "rbxassetid://9438439489"
+ZurentiV1.Limited_15.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_43.Parent = ZurentiV1.Limited_15
+ZurentiV1.TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_43.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_43.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_43.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_43.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_43.Text = "Valentine's Day 2012"
+ZurentiV1.TextLabel_43.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_43.TextScaled = true
+ZurentiV1.TextLabel_43.TextSize = 14.000
+ZurentiV1.TextLabel_43.TextWrapped = true
+
+ZurentiV1.TextLabel_44.Parent = ZurentiV1.Limited_15
+ZurentiV1.TextLabel_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_44.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_44.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_44.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_44.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_44.Text = "Limited"
+ZurentiV1.TextLabel_44.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_44.TextScaled = true
+ZurentiV1.TextLabel_44.TextSize = 14.000
+ZurentiV1.TextLabel_44.TextWrapped = true
+
+ZurentiV1.Limited_16.Name = "Limited"
+ZurentiV1.Limited_16.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Limited_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Limited_16.BackgroundTransparency = 1.000
+ZurentiV1.Limited_16.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Limited_16.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Limited_16.Image = "rbxassetid://9438445253"
+ZurentiV1.Limited_16.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_45.Parent = ZurentiV1.Limited_16
+ZurentiV1.TextLabel_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_45.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_45.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_45.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_45.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_45.Text = "Valentine's Day 2014"
+ZurentiV1.TextLabel_45.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_45.TextScaled = true
+ZurentiV1.TextLabel_45.TextSize = 14.000
+ZurentiV1.TextLabel_45.TextWrapped = true
+
+ZurentiV1.TextLabel_46.Parent = ZurentiV1.Limited_16
+ZurentiV1.TextLabel_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_46.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_46.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_46.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_46.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_46.Text = "Limited"
+ZurentiV1.TextLabel_46.TextColor3 = Color3.fromRGB(255, 198, 83)
+ZurentiV1.TextLabel_46.TextScaled = true
+ZurentiV1.TextLabel_46.TextSize = 14.000
+ZurentiV1.TextLabel_46.TextWrapped = true
+
+ZurentiV1.Offsale_5.Name = "Offsale"
+ZurentiV1.Offsale_5.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Offsale_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_5.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_5.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_5.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_5.Image = "rbxassetid://9438449516"
+ZurentiV1.Offsale_5.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_47.Parent = ZurentiV1.Offsale_5
+ZurentiV1.TextLabel_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_47.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_47.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_47.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_47.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_47.Text = "Neon Shamrock"
+ZurentiV1.TextLabel_47.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_47.TextScaled = true
+ZurentiV1.TextLabel_47.TextSize = 14.000
+ZurentiV1.TextLabel_47.TextWrapped = true
+
+ZurentiV1.TextLabel_48.Parent = ZurentiV1.Offsale_5
+ZurentiV1.TextLabel_48.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_48.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_48.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_48.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_48.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_48.Text = "Off-Sale"
+ZurentiV1.TextLabel_48.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_48.TextScaled = true
+ZurentiV1.TextLabel_48.TextSize = 14.000
+ZurentiV1.TextLabel_48.TextWrapped = true
+
+ZurentiV1.Offsale_6.Name = "Offsale"
+ZurentiV1.Offsale_6.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Offsale_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_6.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_6.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_6.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_6.Image = "rbxassetid://9438456473"
+ZurentiV1.Offsale_6.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_49.Parent = ZurentiV1.Offsale_6
+ZurentiV1.TextLabel_49.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_49.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_49.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_49.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_49.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_49.Text = "Bloxxer Cap"
+ZurentiV1.TextLabel_49.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_49.TextScaled = true
+ZurentiV1.TextLabel_49.TextSize = 14.000
+ZurentiV1.TextLabel_49.TextWrapped = true
+
+ZurentiV1.TextLabel_50.Parent = ZurentiV1.Offsale_6
+ZurentiV1.TextLabel_50.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_50.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_50.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_50.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_50.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_50.Text = "Off-Sale"
+ZurentiV1.TextLabel_50.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_50.TextScaled = true
+ZurentiV1.TextLabel_50.TextSize = 14.000
+ZurentiV1.TextLabel_50.TextWrapped = true
+
+ZurentiV1.Offsale_7.Name = "Offsale"
+ZurentiV1.Offsale_7.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Offsale_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_7.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_7.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_7.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_7.Image = "rbxassetid://9438458744"
+ZurentiV1.Offsale_7.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_51.Parent = ZurentiV1.Offsale_7
+ZurentiV1.TextLabel_51.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_51.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_51.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_51.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_51.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_51.Text = "Snowflake Styles"
+ZurentiV1.TextLabel_51.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_51.TextScaled = true
+ZurentiV1.TextLabel_51.TextSize = 14.000
+ZurentiV1.TextLabel_51.TextWrapped = true
+
+ZurentiV1.TextLabel_52.Parent = ZurentiV1.Offsale_7
+ZurentiV1.TextLabel_52.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_52.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_52.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_52.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_52.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_52.Text = "Off-Sale"
+ZurentiV1.TextLabel_52.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_52.TextScaled = true
+ZurentiV1.TextLabel_52.TextSize = 14.000
+ZurentiV1.TextLabel_52.TextWrapped = true
+
+ZurentiV1.Offsale_8.Name = "Offsale"
+ZurentiV1.Offsale_8.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Offsale_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_8.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_8.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_8.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_8.Image = "rbxassetid://9438461059"
+ZurentiV1.Offsale_8.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_53.Parent = ZurentiV1.Offsale_8
+ZurentiV1.TextLabel_53.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_53.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_53.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_53.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_53.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_53.Text = "Bat Hat"
+ZurentiV1.TextLabel_53.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_53.TextScaled = true
+ZurentiV1.TextLabel_53.TextSize = 14.000
+ZurentiV1.TextLabel_53.TextWrapped = true
+
+ZurentiV1.TextLabel_54.Parent = ZurentiV1.Offsale_8
+ZurentiV1.TextLabel_54.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_54.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_54.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_54.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_54.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_54.Text = "Off-Sale"
+ZurentiV1.TextLabel_54.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_54.TextScaled = true
+ZurentiV1.TextLabel_54.TextSize = 14.000
+ZurentiV1.TextLabel_54.TextWrapped = true
+
+ZurentiV1.Offsale_9.Name = "Offsale"
+ZurentiV1.Offsale_9.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Offsale_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_9.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_9.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_9.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_9.Image = "rbxassetid://9438464306"
+ZurentiV1.Offsale_9.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_55.Parent = ZurentiV1.Offsale_9
+ZurentiV1.TextLabel_55.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_55.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_55.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_55.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_55.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_55.Text = "Turkey Cap"
+ZurentiV1.TextLabel_55.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_55.TextScaled = true
+ZurentiV1.TextLabel_55.TextSize = 14.000
+ZurentiV1.TextLabel_55.TextWrapped = true
+
+ZurentiV1.TextLabel_56.Parent = ZurentiV1.Offsale_9
+ZurentiV1.TextLabel_56.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_56.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_56.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_56.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_56.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_56.Text = "Off-Sale"
+ZurentiV1.TextLabel_56.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_56.TextScaled = true
+ZurentiV1.TextLabel_56.TextSize = 14.000
+ZurentiV1.TextLabel_56.TextWrapped = true
+
+ZurentiV1.Offsale_10.Name = "Offsale"
+ZurentiV1.Offsale_10.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Offsale_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_10.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_10.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_10.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_10.Image = "rbxassetid://9438475329"
+ZurentiV1.Offsale_10.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_57.Parent = ZurentiV1.Offsale_10
+ZurentiV1.TextLabel_57.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_57.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_57.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_57.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_57.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_57.Text = "Shamrock Styles"
+ZurentiV1.TextLabel_57.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_57.TextScaled = true
+ZurentiV1.TextLabel_57.TextSize = 14.000
+ZurentiV1.TextLabel_57.TextWrapped = true
+
+ZurentiV1.TextLabel_58.Parent = ZurentiV1.Offsale_10
+ZurentiV1.TextLabel_58.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_58.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_58.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_58.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_58.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_58.Text = "Off-Sale"
+ZurentiV1.TextLabel_58.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_58.TextScaled = true
+ZurentiV1.TextLabel_58.TextSize = 14.000
+ZurentiV1.TextLabel_58.TextWrapped = true
+
+ZurentiV1.Offsale_11.Name = "Offsale"
+ZurentiV1.Offsale_11.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Offsale_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_11.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_11.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_11.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_11.Image = "rbxassetid://9438475329"
+ZurentiV1.Offsale_11.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_59.Parent = ZurentiV1.Offsale_11
+ZurentiV1.TextLabel_59.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_59.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_59.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_59.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_59.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_59.Text = "Shamrock Styles"
+ZurentiV1.TextLabel_59.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_59.TextScaled = true
+ZurentiV1.TextLabel_59.TextSize = 14.000
+ZurentiV1.TextLabel_59.TextWrapped = true
+
+ZurentiV1.TextLabel_60.Parent = ZurentiV1.Offsale_11
+ZurentiV1.TextLabel_60.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_60.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_60.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_60.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_60.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_60.Text = "Off-Sale"
+ZurentiV1.TextLabel_60.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_60.TextScaled = true
+ZurentiV1.TextLabel_60.TextSize = 14.000
+ZurentiV1.TextLabel_60.TextWrapped = true
+
+ZurentiV1.Offsale_12.Name = "Offsale"
+ZurentiV1.Offsale_12.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Offsale_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_12.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_12.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_12.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_12.Image = "rbxassetid://9438489275"
+ZurentiV1.Offsale_12.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_61.Parent = ZurentiV1.Offsale_12
+ZurentiV1.TextLabel_61.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_61.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_61.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_61.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_61.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_61.Text = "Rising Sun Cap"
+ZurentiV1.TextLabel_61.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_61.TextScaled = true
+ZurentiV1.TextLabel_61.TextSize = 14.000
+ZurentiV1.TextLabel_61.TextWrapped = true
+
+ZurentiV1.TextLabel_62.Parent = ZurentiV1.Offsale_12
+ZurentiV1.TextLabel_62.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_62.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_62.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_62.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_62.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_62.Text = "Off-Sale"
+ZurentiV1.TextLabel_62.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_62.TextScaled = true
+ZurentiV1.TextLabel_62.TextSize = 14.000
+ZurentiV1.TextLabel_62.TextWrapped = true
+
+ZurentiV1.Offsale_13.Name = "Offsale"
+ZurentiV1.Offsale_13.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Offsale_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_13.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_13.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_13.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_13.Image = "rbxassetid://9438491062"
+ZurentiV1.Offsale_13.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_63.Parent = ZurentiV1.Offsale_13
+ZurentiV1.TextLabel_63.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_63.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_63.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_63.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_63.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_63.Text = "Painter Cap"
+ZurentiV1.TextLabel_63.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_63.TextScaled = true
+ZurentiV1.TextLabel_63.TextSize = 14.000
+ZurentiV1.TextLabel_63.TextWrapped = true
+
+ZurentiV1.TextLabel_64.Parent = ZurentiV1.Offsale_13
+ZurentiV1.TextLabel_64.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_64.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_64.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_64.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_64.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_64.Text = "Off-Sale"
+ZurentiV1.TextLabel_64.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_64.TextScaled = true
+ZurentiV1.TextLabel_64.TextSize = 14.000
+ZurentiV1.TextLabel_64.TextWrapped = true
+
+ZurentiV1.Offsale_14.Name = "Offsale"
+ZurentiV1.Offsale_14.Parent = ZurentiV1.OffSale_2
+ZurentiV1.Offsale_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_14.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_14.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_14.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_14.Image = "rbxassetid://9438493079"
+ZurentiV1.Offsale_14.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_65.Parent = ZurentiV1.Offsale_14
+ZurentiV1.TextLabel_65.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_65.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_65.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_65.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_65.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_65.Text = "Mystery Enthusiast"
+ZurentiV1.TextLabel_65.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_65.TextScaled = true
+ZurentiV1.TextLabel_65.TextSize = 14.000
+ZurentiV1.TextLabel_65.TextWrapped = true
+
+ZurentiV1.TextLabel_66.Parent = ZurentiV1.Offsale_14
+ZurentiV1.TextLabel_66.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_66.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_66.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_66.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_66.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_66.Text = "Off-Sale"
+ZurentiV1.TextLabel_66.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_66.TextScaled = true
+ZurentiV1.TextLabel_66.TextSize = 14.000
+ZurentiV1.TextLabel_66.TextWrapped = true
+
+ZurentiV1.Dusekkar.Name = "Dusekkar"
+ZurentiV1.Dusekkar.Parent = ZurentiV1.Requirements
+ZurentiV1.Dusekkar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Dusekkar.BackgroundTransparency = 1.000
+ZurentiV1.Dusekkar.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Required_3.Name = "Required"
+ZurentiV1.Required_3.Parent = ZurentiV1.Dusekkar
+ZurentiV1.Required_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Required_3.BackgroundTransparency = 1.000
+ZurentiV1.Required_3.Position = UDim2.new(0, 0, -1, 0)
+ZurentiV1.Required_3.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Limited_17.Name = "Limited"
+ZurentiV1.Limited_17.Parent = ZurentiV1.Required_3
+ZurentiV1.Limited_17.BackgroundColor3 = Color3.fromRGB(66, 151, 255)
+ZurentiV1.Limited_17.Position = UDim2.new(0.288710862, 0, 0.116515219, 0)
+ZurentiV1.Limited_17.Size = UDim2.new(0.209770352, 0, 0.0668147653, 0)
+ZurentiV1.Limited_17.Font = Enum.Font.Oswald
+ZurentiV1.Limited_17.Text = "LIMITED / OFFSALE"
+ZurentiV1.Limited_17.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Limited_17.TextScaled = true
+ZurentiV1.Limited_17.TextSize = 14.000
+ZurentiV1.Limited_17.TextWrapped = true
+
+ZurentiV1.UICorner_16.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_16.Parent = ZurentiV1.Limited_17
+
+ZurentiV1.Title_5.Name = "Title"
+ZurentiV1.Title_5.Parent = ZurentiV1.Required_3
+ZurentiV1.Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_5.BackgroundTransparency = 1.000
+ZurentiV1.Title_5.Position = UDim2.new(0.0780324861, 0, 0.0112774614, 0)
+ZurentiV1.Title_5.Size = UDim2.new(0.843253732, 0, 0.0818011314, 0)
+ZurentiV1.Title_5.ZIndex = 2
+ZurentiV1.Title_5.Font = Enum.Font.Oswald
+ZurentiV1.Title_5.Text = "REQUIRED ITEMS"
+ZurentiV1.Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_5.TextScaled = true
+ZurentiV1.Title_5.TextSize = 14.000
+ZurentiV1.Title_5.TextWrapped = true
+
+ZurentiV1.Frame_6.Parent = ZurentiV1.Title_5
+ZurentiV1.Frame_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_6.BorderSizePixel = 0
+ZurentiV1.Frame_6.Position = UDim2.new(0, 0, 0.979877174, 0)
+ZurentiV1.Frame_6.Size = UDim2.new(1.00999999, 0, 0.0799999982, 0)
+
+ZurentiV1.UICorner_17.CornerRadius = UDim.new(0.5, 0)
+ZurentiV1.UICorner_17.Parent = ZurentiV1.Frame_6
+
+ZurentiV1.Close_3.Name = "Close"
+ZurentiV1.Close_3.Parent = ZurentiV1.Required_3
+ZurentiV1.Close_3.BackgroundColor3 = Color3.fromRGB(255, 110, 112)
+ZurentiV1.Close_3.Position = UDim2.new(0.508483768, 0, 0.116515219, 0)
+ZurentiV1.Close_3.Size = UDim2.new(0.209770352, 0, 0.0668147653, 0)
+ZurentiV1.Close_3.Font = Enum.Font.Oswald
+ZurentiV1.Close_3.Text = "CLOSE"
+ZurentiV1.Close_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Close_3.TextScaled = true
+ZurentiV1.Close_3.TextSize = 14.000
+ZurentiV1.Close_3.TextWrapped = true
+
+ZurentiV1.UICorner_18.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_18.Parent = ZurentiV1.Close_3
+
+ZurentiV1.Intro_3.Name = "Intro"
+ZurentiV1.Intro_3.Parent = ZurentiV1.Dusekkar
+ZurentiV1.Intro_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Intro_3.BackgroundTransparency = 1.000
+ZurentiV1.Intro_3.Position = UDim2.new(0.184, 0, -1.17299998, 0)
+ZurentiV1.Intro_3.Size = UDim2.new(0.632598519, 0, 0.653987706, 0)
+
+ZurentiV1.Title_6.Name = "Title"
+ZurentiV1.Title_6.Parent = ZurentiV1.Intro_3
+ZurentiV1.Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_6.Position = UDim2.new(0.165786698, 0, 0.213883668, 0)
+ZurentiV1.Title_6.Size = UDim2.new(0.667370617, 0, 0.0994371474, 0)
+
+ZurentiV1.UICorner_19.CornerRadius = UDim.new(0.200000003, 0)
+ZurentiV1.UICorner_19.Parent = ZurentiV1.Title_6
+
+ZurentiV1.TextLabel_67.Parent = ZurentiV1.Title_6
+ZurentiV1.TextLabel_67.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_67.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_67.BorderSizePixel = 0
+ZurentiV1.TextLabel_67.Size = UDim2.new(1, 0, 1, 0)
+ZurentiV1.TextLabel_67.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_67.Text = "DUSEKKAR SCRIPT REQUIREMENTS"
+ZurentiV1.TextLabel_67.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_67.TextScaled = true
+ZurentiV1.TextLabel_67.TextSize = 14.000
+ZurentiV1.TextLabel_67.TextWrapped = true
+
+ZurentiV1.Body_3.Name = "Body"
+ZurentiV1.Body_3.Parent = ZurentiV1.Intro_3
+ZurentiV1.Body_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Body_3.Position = UDim2.new(0.165786698, 0, 0.33208254, 0)
+ZurentiV1.Body_3.Size = UDim2.new(0.667370617, 0, 0.283302069, 0)
+
+ZurentiV1.UICorner_20.CornerRadius = UDim.new(0.0500000007, 0)
+ZurentiV1.UICorner_20.Parent = ZurentiV1.Body_3
+
+ZurentiV1.TextLabel_68.Parent = ZurentiV1.Body_3
+ZurentiV1.TextLabel_68.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_68.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_68.BorderSizePixel = 0
+ZurentiV1.TextLabel_68.Position = UDim2.new(0.03164557, 0, 0.11070545, 0)
+ZurentiV1.TextLabel_68.Size = UDim2.new(0.938291132, 0, 0.772732973, 0)
+ZurentiV1.TextLabel_68.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_68.Text = "YOU ONLY NEED ONE OF THE HATS LISTED"
+ZurentiV1.TextLabel_68.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_68.TextScaled = true
+ZurentiV1.TextLabel_68.TextSize = 14.000
+ZurentiV1.TextLabel_68.TextWrapped = true
+
+ZurentiV1.Next_2.Name = "Next"
+ZurentiV1.Next_2.Parent = ZurentiV1.Intro_3
+ZurentiV1.Next_2.BackgroundColor3 = Color3.fromRGB(115, 255, 143)
+ZurentiV1.Next_2.Position = UDim2.new(0.621964097, 0, 0.632270157, 0)
+ZurentiV1.Next_2.Size = UDim2.new(0.211193249, 0, 0.0938086286, 0)
+ZurentiV1.Next_2.Font = Enum.Font.Oswald
+ZurentiV1.Next_2.Text = "NEXT"
+ZurentiV1.Next_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Next_2.TextScaled = true
+ZurentiV1.Next_2.TextSize = 14.000
+ZurentiV1.Next_2.TextWrapped = true
+
+ZurentiV1.UICorner_21.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_21.Parent = ZurentiV1.Next_2
+
+ZurentiV1.Back_2.Name = "Back"
+ZurentiV1.Back_2.Parent = ZurentiV1.Intro_3
+ZurentiV1.Back_2.BackgroundColor3 = Color3.fromRGB(255, 113, 108)
+ZurentiV1.Back_2.Position = UDim2.new(0.401267141, 0, 0.632270157, 0)
+ZurentiV1.Back_2.Size = UDim2.new(0.211193249, 0, 0.0938086286, 0)
+ZurentiV1.Back_2.Font = Enum.Font.Oswald
+ZurentiV1.Back_2.Text = "BACK"
+ZurentiV1.Back_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Back_2.TextScaled = true
+ZurentiV1.Back_2.TextSize = 14.000
+ZurentiV1.Back_2.TextWrapped = true
+
+ZurentiV1.UICorner_22.CornerRadius = UDim.new(0.170000002, 0)
+ZurentiV1.UICorner_22.Parent = ZurentiV1.Back_2
+
+ZurentiV1.List_3.Name = "List"
+ZurentiV1.List_3.Parent = ZurentiV1.Dusekkar
+ZurentiV1.List_3.Active = true
+ZurentiV1.List_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.List_3.BackgroundTransparency = 1.000
+ZurentiV1.List_3.BorderSizePixel = 0
+ZurentiV1.List_3.Position = UDim2.new(-1.17400002, 0, 0.189999998, 0)
+ZurentiV1.List_3.Size = UDim2.new(0.648630619, 0, 0.769325137, 0)
+ZurentiV1.List_3.CanvasSize = UDim2.new(0, 0, 4, 0)
+
+ZurentiV1.OffSale_3.Name = "Off Sale"
+ZurentiV1.OffSale_3.Parent = ZurentiV1.List_3
+ZurentiV1.OffSale_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.OffSale_3.BackgroundTransparency = 1.000
+ZurentiV1.OffSale_3.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.UIGridLayout_4.Parent = ZurentiV1.OffSale_3
+ZurentiV1.UIGridLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
+ZurentiV1.UIGridLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+ZurentiV1.UIGridLayout_4.CellPadding = UDim2.new(0.0500000007, 0, 0, 0)
+ZurentiV1.UIGridLayout_4.CellSize = UDim2.new(0.200000003, 0, 0.100000001, 0)
+
+ZurentiV1.Offsale_15.Name = "Offsale"
+ZurentiV1.Offsale_15.Parent = ZurentiV1.OffSale_3
+ZurentiV1.Offsale_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Offsale_15.BackgroundTransparency = 1.000
+ZurentiV1.Offsale_15.Position = UDim2.new(0.0133882584, 0, 0.00552147254, 0)
+ZurentiV1.Offsale_15.Size = UDim2.new(0.199794009, 0, 0.120245397, 0)
+ZurentiV1.Offsale_15.Image = "rbxassetid://9459649503"
+ZurentiV1.Offsale_15.ScaleType = Enum.ScaleType.Fit
+
+ZurentiV1.TextLabel_69.Parent = ZurentiV1.Offsale_15
+ZurentiV1.TextLabel_69.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_69.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_69.Position = UDim2.new(0, 0, 0.853856146, 0)
+ZurentiV1.TextLabel_69.Size = UDim2.new(1, 0, 0.187617362, 0)
+ZurentiV1.TextLabel_69.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_69.Text = "Dusekkar"
+ZurentiV1.TextLabel_69.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_69.TextScaled = true
+ZurentiV1.TextLabel_69.TextSize = 14.000
+ZurentiV1.TextLabel_69.TextWrapped = true
+
+ZurentiV1.TextLabel_70.Parent = ZurentiV1.Offsale_15
+ZurentiV1.TextLabel_70.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_70.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_70.Position = UDim2.new(0, 0, 0.993865013, 0)
+ZurentiV1.TextLabel_70.Size = UDim2.new(1.00000012, 0, 0.141386032, 0)
+ZurentiV1.TextLabel_70.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_70.Text = "Off-Sale"
+ZurentiV1.TextLabel_70.TextColor3 = Color3.fromRGB(255, 92, 92)
+ZurentiV1.TextLabel_70.TextScaled = true
+ZurentiV1.TextLabel_70.TextSize = 14.000
+ZurentiV1.TextLabel_70.TextWrapped = true
+
+ZurentiV1.Scripts.Name = "Scripts"
+ZurentiV1.Scripts.Parent = ZurentiV1.Main
+
+ZurentiV1.Values.Name = "Values"
+ZurentiV1.Values.Parent = ZurentiV1.Main
+
+ZurentiV1.Buttons.Name = "Buttons"
+ZurentiV1.Buttons.Parent = ZurentiV1.Main
+ZurentiV1.Buttons.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Buttons.BackgroundTransparency = 1.000
+ZurentiV1.Buttons.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Frame_7.Parent = ZurentiV1.Buttons
+ZurentiV1.Frame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_7.BackgroundTransparency = 1.000
+ZurentiV1.Frame_7.Position = UDim2.new(0.899999976, 0, 0.825999975, 0)
+ZurentiV1.Frame_7.Size = UDim2.new(0.0935203731, 0, 0.171779141, 0)
+
+ZurentiV1.Toggle.Name = "Toggle"
+ZurentiV1.Toggle.Parent = ZurentiV1.Frame_7
+ZurentiV1.Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Toggle.BackgroundTransparency = 0.500
+ZurentiV1.Toggle.BorderSizePixel = 0
+ZurentiV1.Toggle.Position = UDim2.new(0.110543385, 0, 0.443606555, 0)
+ZurentiV1.Toggle.Size = UDim2.new(0.278434783, 0, 0.554525197, 0)
+ZurentiV1.Toggle.Font = Enum.Font.DenkOne
+ZurentiV1.Toggle.Text = ">"
+ZurentiV1.Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Toggle.TextScaled = true
+ZurentiV1.Toggle.TextWrapped = true
+
+ZurentiV1.UICorner_23.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_23.Parent = ZurentiV1.Toggle
+
+ZurentiV1.Pumpkin.Name = "Pumpkin"
+ZurentiV1.Pumpkin.Parent = ZurentiV1.Frame_7
+ZurentiV1.Pumpkin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Pumpkin.BackgroundTransparency = 0.500
+ZurentiV1.Pumpkin.BorderSizePixel = 0
+ZurentiV1.Pumpkin.Position = UDim2.new(0.44636929, 0, 0.443606555, 0)
+ZurentiV1.Pumpkin.Size = UDim2.new(0.548963249, 0, 0.554525197, 0)
+ZurentiV1.Pumpkin.Text = ""
+ZurentiV1.Pumpkin.TextTransparency = 0.500
+
+ZurentiV1.UICorner_24.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_24.Parent = ZurentiV1.Pumpkin
+
+ZurentiV1.ImageLabel.Parent = ZurentiV1.Pumpkin
+ZurentiV1.ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.ImageLabel.BackgroundTransparency = 1.000
+ZurentiV1.ImageLabel.Size = UDim2.new(0.989904583, 0, 0.976901114, 0)
+ZurentiV1.ImageLabel.Image = "rbxassetid://9459058860"
+ZurentiV1.ImageLabel.ImageColor3 = Color3.fromRGB(223, 223, 223)
+
+ZurentiV1.Hats.Name = "Hats"
+ZurentiV1.Hats.Parent = ZurentiV1.Buttons
+ZurentiV1.Hats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Hats.BackgroundTransparency = 1.000
+ZurentiV1.Hats.ClipsDescendants = true
+ZurentiV1.Hats.Position = UDim2.new(0.910085976, 0, 0.479670793, 0)
+ZurentiV1.Hats.Size = UDim2.new(0.0820953846, 0, 0.415277779, 0)
+
+ZurentiV1.Skaters_2.Name = "Skaters"
+ZurentiV1.Skaters_2.Parent = ZurentiV1.Hats
+ZurentiV1.Skaters_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Skaters_2.BackgroundTransparency = 1.000
+ZurentiV1.Skaters_2.Position = UDim2.new(1, 0, 0, 0)
+ZurentiV1.Skaters_2.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Pumpkin_2.Name = "Pumpkin"
+ZurentiV1.Pumpkin_2.Parent = ZurentiV1.Skaters_2
+ZurentiV1.Pumpkin_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Pumpkin_2.BackgroundTransparency = 0.500
+ZurentiV1.Pumpkin_2.BorderSizePixel = 0
+ZurentiV1.Pumpkin_2.Position = UDim2.new(0.38563174, 0, 0.783104122, 0)
+ZurentiV1.Pumpkin_2.Size = UDim2.new(0.609700799, 0, 0.215027526, 0)
+ZurentiV1.Pumpkin_2.Font = Enum.Font.Oswald
+ZurentiV1.Pumpkin_2.Text = "FLIP"
+ZurentiV1.Pumpkin_2.TextColor3 = Color3.fromRGB(28, 223, 116)
+ZurentiV1.Pumpkin_2.TextSize = 34.000
+ZurentiV1.Pumpkin_2.TextWrapped = true
+
+ZurentiV1.UICorner_25.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_25.Parent = ZurentiV1.Pumpkin_2
+
+ZurentiV1.Start.Name = "Start"
+ZurentiV1.Start.Parent = ZurentiV1.Main
+ZurentiV1.Start.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.Start.BackgroundTransparency = 1.000
+ZurentiV1.Start.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Frame_8.Parent = ZurentiV1.Start
+ZurentiV1.Frame_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_8.BackgroundTransparency = 1.000
+ZurentiV1.Frame_8.ClipsDescendants = true
+ZurentiV1.Frame_8.Position = UDim2.new(0.216182709, 0, 0.179797202, 0)
+ZurentiV1.Frame_8.Size = UDim2.new(0.562939823, 0, 0.640277803, 0)
+
+ZurentiV1.Panel.Name = "Panel"
+ZurentiV1.Panel.Parent = ZurentiV1.Frame_8
+ZurentiV1.Panel.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ZurentiV1.Panel.Position = UDim2.new(-1.00999999, 0, 0.169, 0)
+ZurentiV1.Panel.Size = UDim2.new(0.652828872, 0, 0.661278963, 0)
+
+ZurentiV1.UICorner_26.CornerRadius = UDim.new(0.0250000004, 0)
+ZurentiV1.UICorner_26.Parent = ZurentiV1.Panel
+
+ZurentiV1.Title_7.Name = "Title"
+ZurentiV1.Title_7.Parent = ZurentiV1.Panel
+ZurentiV1.Title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_7.BackgroundTransparency = 1.000
+ZurentiV1.Title_7.Size = UDim2.new(1.00000024, 0, 0.148809239, 0)
+ZurentiV1.Title_7.ZIndex = 2
+ZurentiV1.Title_7.Font = Enum.Font.Oswald
+ZurentiV1.Title_7.Text = "<font color=\"#25db7d\"> Zuventi's</font> Panel"
+ZurentiV1.Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_7.TextScaled = true
+ZurentiV1.Title_7.TextSize = 14.000
+ZurentiV1.Title_7.TextWrapped = true
+
+ZurentiV1.Frame_9.Parent = ZurentiV1.Title_7
+ZurentiV1.Frame_9.BackgroundColor3 = Color3.fromRGB(28, 223, 116)
+ZurentiV1.Frame_9.Position = UDim2.new(0.105228737, 0, 0.992041826, 0)
+ZurentiV1.Frame_9.Size = UDim2.new(0.780324399, 0, 0.140000001, 0)
+
+ZurentiV1.UICorner_27.CornerRadius = UDim.new(1, 0)
+ZurentiV1.UICorner_27.Parent = ZurentiV1.Frame_9
+
+ZurentiV1.Execute.Name = "Execute"
+ZurentiV1.Execute.Parent = ZurentiV1.Panel
+ZurentiV1.Execute.BackgroundColor3 = Color3.fromRGB(28, 223, 116)
+ZurentiV1.Execute.Position = UDim2.new(0.0210298896, 0, 0.842526853, 0)
+ZurentiV1.Execute.Size = UDim2.new(0.448909223, 0, 0.120043196, 0)
+ZurentiV1.Execute.Font = Enum.Font.Oswald
+ZurentiV1.Execute.Text = "LOAD PANEL"
+ZurentiV1.Execute.TextColor3 = Color3.fromRGB(38, 38, 38)
+ZurentiV1.Execute.TextScaled = true
+ZurentiV1.Execute.TextSize = 43.000
+ZurentiV1.Execute.TextWrapped = true
+
+ZurentiV1.UICorner_28.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_28.Parent = ZurentiV1.Execute
+
+ZurentiV1.Frame_10.Parent = ZurentiV1.Panel
+ZurentiV1.Frame_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_10.BackgroundTransparency = 0.850
+ZurentiV1.Frame_10.Position = UDim2.new(0.0213231575, 0, 0.212244809, 0)
+ZurentiV1.Frame_10.Size = UDim2.new(0.955985904, 0, 0.596923053, 0)
+
+ZurentiV1.UICorner_29.CornerRadius = UDim.new(0.0250000004, 0)
+ZurentiV1.UICorner_29.Parent = ZurentiV1.Frame_10
+
+ZurentiV1.ScrollingFrame.Parent = ZurentiV1.Frame_10
+ZurentiV1.ScrollingFrame.Active = true
+ZurentiV1.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.ScrollingFrame.BackgroundTransparency = 1.000
+ZurentiV1.ScrollingFrame.BorderSizePixel = 0
+ZurentiV1.ScrollingFrame.Size = UDim2.new(1, 0, 1.00000012, 0)
+ZurentiV1.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+
+ZurentiV1.Frame_11.Parent = ZurentiV1.ScrollingFrame
+ZurentiV1.Frame_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_11.BackgroundTransparency = 1.000
+ZurentiV1.Frame_11.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.UIListLayout.Parent = ZurentiV1.Frame_11
+ZurentiV1.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+ZurentiV1.TextLabel_71.Parent = ZurentiV1.Frame_11
+ZurentiV1.TextLabel_71.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_71.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_71.BorderSizePixel = 0
+ZurentiV1.TextLabel_71.Size = UDim2.new(0.999224186, 0, 0.0428637937, 0)
+ZurentiV1.TextLabel_71.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_71.Text = " <u>UPDATES</u>"
+ZurentiV1.TextLabel_71.TextColor3 = Color3.fromRGB(37, 219, 125)
+ZurentiV1.TextLabel_71.TextScaled = true
+ZurentiV1.TextLabel_71.TextSize = 14.000
+ZurentiV1.TextLabel_71.TextWrapped = true
+ZurentiV1.TextLabel_71.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.TextLabel_72.Parent = ZurentiV1.Frame_11
+ZurentiV1.TextLabel_72.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_72.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_72.BorderSizePixel = 0
+ZurentiV1.TextLabel_72.Position = UDim2.new(0, 0, 0.0428637937, 0)
+ZurentiV1.TextLabel_72.Size = UDim2.new(0.999224186, 0, 0.0285758637, 0)
+ZurentiV1.TextLabel_72.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_72.Text = " VERSION 0.1 - 23/04/22"
+ZurentiV1.TextLabel_72.TextColor3 = Color3.fromRGB(37, 219, 125)
+ZurentiV1.TextLabel_72.TextScaled = true
+ZurentiV1.TextLabel_72.TextSize = 14.000
+ZurentiV1.TextLabel_72.TextWrapped = true
+ZurentiV1.TextLabel_72.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.TextLabel_73.Parent = ZurentiV1.Frame_11
+ZurentiV1.TextLabel_73.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_73.BackgroundTransparency = 0.800
+ZurentiV1.TextLabel_73.BorderSizePixel = 0
+ZurentiV1.TextLabel_73.Position = UDim2.new(0, 0, 0.0714396611, 0)
+ZurentiV1.TextLabel_73.Size = UDim2.new(0.999224186, 0, 0.0285758637, 0)
+ZurentiV1.TextLabel_73.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_73.Text = " • aaaa"
+ZurentiV1.TextLabel_73.TextColor3 = Color3.fromRGB(219, 219, 219)
+ZurentiV1.TextLabel_73.TextScaled = true
+ZurentiV1.TextLabel_73.TextSize = 14.000
+ZurentiV1.TextLabel_73.TextWrapped = true
+ZurentiV1.TextLabel_73.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.TextLabel_74.Parent = ZurentiV1.Frame_11
+ZurentiV1.TextLabel_74.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_74.BackgroundTransparency = 0.900
+ZurentiV1.TextLabel_74.BorderSizePixel = 0
+ZurentiV1.TextLabel_74.Position = UDim2.new(0, 0, 0.100015521, 0)
+ZurentiV1.TextLabel_74.Size = UDim2.new(0.999224186, 0, 0.0285758637, 0)
+ZurentiV1.TextLabel_74.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_74.Text = " • aaaa"
+ZurentiV1.TextLabel_74.TextColor3 = Color3.fromRGB(219, 219, 219)
+ZurentiV1.TextLabel_74.TextScaled = true
+ZurentiV1.TextLabel_74.TextSize = 14.000
+ZurentiV1.TextLabel_74.TextWrapped = true
+ZurentiV1.TextLabel_74.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.TextLabel_75.Parent = ZurentiV1.Frame_11
+ZurentiV1.TextLabel_75.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_75.BackgroundTransparency = 0.800
+ZurentiV1.TextLabel_75.BorderSizePixel = 0
+ZurentiV1.TextLabel_75.Position = UDim2.new(0, 0, 0.128591388, 0)
+ZurentiV1.TextLabel_75.Size = UDim2.new(0.999224186, 0, 0.0285758637, 0)
+ZurentiV1.TextLabel_75.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_75.Text = " • aaaa"
+ZurentiV1.TextLabel_75.TextColor3 = Color3.fromRGB(219, 219, 219)
+ZurentiV1.TextLabel_75.TextScaled = true
+ZurentiV1.TextLabel_75.TextSize = 14.000
+ZurentiV1.TextLabel_75.TextWrapped = true
+ZurentiV1.TextLabel_75.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Panel_2.Name = "Panel"
+ZurentiV1.Panel_2.Parent = ZurentiV1.Panel
+ZurentiV1.Panel_2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ZurentiV1.Panel_2.Position = UDim2.new(1.01025498, 0, 0, 0)
+ZurentiV1.Panel_2.Size = UDim2.new(0.441944748, 0, 1, 0)
+
+ZurentiV1.UICorner_30.CornerRadius = UDim.new(0.0250000004, 0)
+ZurentiV1.UICorner_30.Parent = ZurentiV1.Panel_2
+
+ZurentiV1.Title_8.Name = "Title"
+ZurentiV1.Title_8.Parent = ZurentiV1.Panel_2
+ZurentiV1.Title_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_8.BackgroundTransparency = 1.000
+ZurentiV1.Title_8.Size = UDim2.new(1.00000012, 0, 0.148809239, 0)
+ZurentiV1.Title_8.ZIndex = 2
+ZurentiV1.Title_8.Font = Enum.Font.Oswald
+ZurentiV1.Title_8.Text = "CREDITS"
+ZurentiV1.Title_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_8.TextScaled = true
+ZurentiV1.Title_8.TextSize = 14.000
+ZurentiV1.Title_8.TextWrapped = true
+
+ZurentiV1.Frame_12.Parent = ZurentiV1.Title_8
+ZurentiV1.Frame_12.BackgroundColor3 = Color3.fromRGB(28, 223, 116)
+ZurentiV1.Frame_12.Position = UDim2.new(0.0662885383, 0, 0.992042124, 0)
+ZurentiV1.Frame_12.Size = UDim2.new(0.853956699, 0, 0.140000001, 0)
+
+ZurentiV1.UICorner_31.CornerRadius = UDim.new(1, 0)
+ZurentiV1.UICorner_31.Parent = ZurentiV1.Frame_12
+
+ZurentiV1.Panel_3.Name = "Panel"
+ZurentiV1.Panel_3.Parent = ZurentiV1.Panel_2
+ZurentiV1.Panel_3.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+ZurentiV1.Panel_3.Position = UDim2.new(0.0667239875, 0, 0.209939584, 0)
+ZurentiV1.Panel_3.Size = UDim2.new(0.858335435, 0, 0.745992541, 0)
+
+ZurentiV1.UICorner_32.CornerRadius = UDim.new(0.0250000004, 0)
+ZurentiV1.UICorner_32.Parent = ZurentiV1.Panel_3
+
+ZurentiV1.UIListLayout_2.Parent = ZurentiV1.Panel_3
+ZurentiV1.UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+ZurentiV1.TextLabel_76.Parent = ZurentiV1.Panel_3
+ZurentiV1.TextLabel_76.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_76.BackgroundTransparency = 0.800
+ZurentiV1.TextLabel_76.BorderSizePixel = 0
+ZurentiV1.TextLabel_76.Size = UDim2.new(0.998304605, 0, 0.114328168, 0)
+ZurentiV1.TextLabel_76.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_76.Text = "  @Zuventi - Creator "
+ZurentiV1.TextLabel_76.TextColor3 = Color3.fromRGB(28, 223, 116)
+ZurentiV1.TextLabel_76.TextScaled = true
+ZurentiV1.TextLabel_76.TextSize = 14.000
+ZurentiV1.TextLabel_76.TextWrapped = true
+ZurentiV1.TextLabel_76.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.TextLabel_77.Parent = ZurentiV1.Panel_3
+ZurentiV1.TextLabel_77.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_77.BackgroundTransparency = 0.900
+ZurentiV1.TextLabel_77.BorderSizePixel = 0
+ZurentiV1.TextLabel_77.Size = UDim2.new(0.998304605, 0, 0.114328168, 0)
+ZurentiV1.TextLabel_77.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_77.Text = "  @Zuventio - Creator "
+ZurentiV1.TextLabel_77.TextColor3 = Color3.fromRGB(28, 223, 116)
+ZurentiV1.TextLabel_77.TextScaled = true
+ZurentiV1.TextLabel_77.TextSize = 14.000
+ZurentiV1.TextLabel_77.TextWrapped = true
+ZurentiV1.TextLabel_77.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.TextLabel_78.Parent = ZurentiV1.Panel_3
+ZurentiV1.TextLabel_78.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ZurentiV1.TextLabel_78.BackgroundTransparency = 0.900
+ZurentiV1.TextLabel_78.BorderSizePixel = 0
+ZurentiV1.TextLabel_78.Size = UDim2.new(0.998304605, 0, 0.114328168, 0)
+ZurentiV1.TextLabel_78.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_78.Text = "  @uRevive - Contribution "
+ZurentiV1.TextLabel_78.TextColor3 = Color3.fromRGB(223, 86, 86)
+ZurentiV1.TextLabel_78.TextScaled = true
+ZurentiV1.TextLabel_78.TextSize = 14.000
+ZurentiV1.TextLabel_78.TextWrapped = true
+ZurentiV1.TextLabel_78.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Supported.Name = "Supported"
+ZurentiV1.Supported.Parent = ZurentiV1.Panel
+ZurentiV1.Supported.Active = true
+ZurentiV1.Supported.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+ZurentiV1.Supported.Position = UDim2.new(0.482695848, 0, 0.842526913, 0)
+ZurentiV1.Supported.Selectable = true
+ZurentiV1.Supported.Size = UDim2.new(0.493871599, 0, 0.120043188, 0)
+ZurentiV1.Supported.Font = Enum.Font.Oswald
+ZurentiV1.Supported.Text = "GAME SUPPORTED"
+ZurentiV1.Supported.TextColor3 = Color3.fromRGB(28, 223, 116)
+ZurentiV1.Supported.TextScaled = true
+ZurentiV1.Supported.TextSize = 43.000
+ZurentiV1.Supported.TextWrapped = true
+
+ZurentiV1.UICorner_33.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_33.Parent = ZurentiV1.Supported
+
+ZurentiV1.Menu.Name = "Menu"
+ZurentiV1.Menu.Parent = ZurentiV1.Main
+ZurentiV1.Menu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Menu.BackgroundTransparency = 1.000
+ZurentiV1.Menu.ClipsDescendants = true
+ZurentiV1.Menu.Position = UDim2.new(0.297929198, 0, 0.0736196265, 0)
+ZurentiV1.Menu.Size = UDim2.new(0.400801599, 0, 0.851533771, 0)
+
+ZurentiV1.Panel_4.Name = "Panel"
+ZurentiV1.Panel_4.Parent = ZurentiV1.Menu
+ZurentiV1.Panel_4.BackgroundColor3 = Color3.fromRGB(38, 42, 47)
+ZurentiV1.Panel_4.Position = UDim2.new(1, 0, 0.0719999969, 0)
+ZurentiV1.Panel_4.Size = UDim2.new(0.858123899, 0, 0.900576353, 0)
+
+ZurentiV1.UICorner_34.CornerRadius = UDim.new(0.0199999996, 0)
+ZurentiV1.UICorner_34.Parent = ZurentiV1.Panel_4
+
+ZurentiV1.Title_9.Name = "Title"
+ZurentiV1.Title_9.Parent = ZurentiV1.Panel_4
+ZurentiV1.Title_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_9.BackgroundTransparency = 1.000
+ZurentiV1.Title_9.Size = UDim2.new(0.391465664, 0, 0.0640243664, 0)
+ZurentiV1.Title_9.ZIndex = 2
+ZurentiV1.Title_9.Font = Enum.Font.Oswald
+ZurentiV1.Title_9.Text = "<font color=\"#25db7d\"> Zuventi's</font> Panel"
+ZurentiV1.Title_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_9.TextScaled = true
+ZurentiV1.Title_9.TextSize = 14.000
+ZurentiV1.Title_9.TextWrapped = true
+ZurentiV1.Title_9.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Top.Name = "Top"
+ZurentiV1.Top.Parent = ZurentiV1.Panel_4
+ZurentiV1.Top.BackgroundColor3 = Color3.fromRGB(56, 62, 70)
+ZurentiV1.Top.Size = UDim2.new(1, 0, 0.121951222, 0)
+
+ZurentiV1.UICorner_35.CornerRadius = UDim.new(0.100000001, 0)
+ZurentiV1.UICorner_35.Parent = ZurentiV1.Top
+
+ZurentiV1.Frame_13.Parent = ZurentiV1.Top
+ZurentiV1.Frame_13.BackgroundColor3 = Color3.fromRGB(56, 62, 70)
+ZurentiV1.Frame_13.BorderSizePixel = 0
+ZurentiV1.Frame_13.Position = UDim2.new(0, 0, 0.524999976, 0)
+ZurentiV1.Frame_13.Size = UDim2.new(1, 0, 0.474999994, 0)
+
+ZurentiV1.UIGridLayout_5.Parent = ZurentiV1.Frame_13
+ZurentiV1.UIGridLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+ZurentiV1.UIGridLayout_5.CellPadding = UDim2.new(0, 0, 0, 0)
+ZurentiV1.UIGridLayout_5.CellSize = UDim2.new(0.333000004, 0, 1, 0)
+ZurentiV1.UIGridLayout_5.FillDirectionMaxCells = 3
+
+ZurentiV1.Universal.Name = "Universal"
+ZurentiV1.Universal.Parent = ZurentiV1.Frame_13
+ZurentiV1.Universal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Universal.BackgroundTransparency = 0.900
+ZurentiV1.Universal.BorderSizePixel = 0
+ZurentiV1.Universal.Size = UDim2.new(0.185528755, 0, 2.63157892, 0)
+ZurentiV1.Universal.Font = Enum.Font.Oswald
+ZurentiV1.Universal.Text = "Universal"
+ZurentiV1.Universal.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Universal.TextScaled = true
+ZurentiV1.Universal.TextSize = 14.000
+ZurentiV1.Universal.TextWrapped = true
+
+ZurentiV1.Game.Name = "Game"
+ZurentiV1.Game.Parent = ZurentiV1.Frame_13
+ZurentiV1.Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Game.BackgroundTransparency = 0.900
+ZurentiV1.Game.BorderSizePixel = 0
+ZurentiV1.Game.Size = UDim2.new(0.185528755, 0, 2.63157892, 0)
+ZurentiV1.Game.Font = Enum.Font.Oswald
+ZurentiV1.Game.Text = "Game"
+ZurentiV1.Game.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Game.TextScaled = true
+ZurentiV1.Game.TextSize = 14.000
+ZurentiV1.Game.TextWrapped = true
+
+ZurentiV1.AddOns.Name = "Add-Ons"
+ZurentiV1.AddOns.Parent = ZurentiV1.Frame_13
+ZurentiV1.AddOns.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.AddOns.BackgroundTransparency = 0.900
+ZurentiV1.AddOns.BorderSizePixel = 0
+ZurentiV1.AddOns.Size = UDim2.new(0.185528755, 0, 2.63157892, 0)
+ZurentiV1.AddOns.Font = Enum.Font.Oswald
+ZurentiV1.AddOns.Text = "Add-Ons"
+ZurentiV1.AddOns.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.AddOns.TextScaled = true
+ZurentiV1.AddOns.TextSize = 14.000
+ZurentiV1.AddOns.TextWrapped = true
+
+ZurentiV1.Main_2.Name = "Main"
+ZurentiV1.Main_2.Parent = ZurentiV1.Panel_4
+ZurentiV1.Main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Main_2.BackgroundTransparency = 0.950
+ZurentiV1.Main_2.Position = UDim2.new(0.0168714486, 0, 0.142221928, 0)
+ZurentiV1.Main_2.Size = UDim2.new(0.966344059, 0, 0.842307329, 0)
+
+ZurentiV1.UICorner_36.CornerRadius = UDim.new(0.00999999978, 0)
+ZurentiV1.UICorner_36.Parent = ZurentiV1.Main_2
+
+ZurentiV1.ScrollingFrame_2.Name = "ScrollingFrame"
+ZurentiV1.ScrollingFrame_2.Parent = ZurentiV1.Main_2
+ZurentiV1.ScrollingFrame_2.Active = true
+ZurentiV1.ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.ScrollingFrame_2.BackgroundTransparency = 1.000
+ZurentiV1.ScrollingFrame_2.BorderSizePixel = 0
+ZurentiV1.ScrollingFrame_2.ClipsDescendants = true
+ZurentiV1.ScrollingFrame_2.Selectable = true
+ZurentiV1.ScrollingFrame_2.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.AddOns_2.Name = "Add-Ons"
+ZurentiV1.AddOns_2.Parent = ZurentiV1.ScrollingFrame_2
+ZurentiV1.AddOns_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.AddOns_2.BackgroundTransparency = 1.000
+ZurentiV1.AddOns_2.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Title_10.Name = "Title"
+ZurentiV1.Title_10.Parent = ZurentiV1.AddOns_2
+ZurentiV1.Title_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_10.BackgroundTransparency = 1.000
+ZurentiV1.Title_10.Position = UDim2.new(0.0820405036, 0, 0.00146151066, 0)
+ZurentiV1.Title_10.Size = UDim2.new(0.843253732, 0, 0.0818011314, 0)
+ZurentiV1.Title_10.ZIndex = 2
+ZurentiV1.Title_10.Font = Enum.Font.Oswald
+ZurentiV1.Title_10.Text = "Add-Ons"
+ZurentiV1.Title_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_10.TextScaled = true
+ZurentiV1.Title_10.TextSize = 14.000
+ZurentiV1.Title_10.TextWrapped = true
+
+ZurentiV1.Frame_14.Parent = ZurentiV1.Title_10
+ZurentiV1.Frame_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_14.BorderSizePixel = 0
+ZurentiV1.Frame_14.Position = UDim2.new(0, 0, 0.979877174, 0)
+ZurentiV1.Frame_14.Size = UDim2.new(1.00999999, 0, 0.0799999982, 0)
+
+ZurentiV1.UICorner_37.CornerRadius = UDim.new(0.5, 0)
+ZurentiV1.UICorner_37.Parent = ZurentiV1.Frame_14
+
+ZurentiV1.Frame_15.Parent = ZurentiV1.AddOns_2
+ZurentiV1.Frame_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_15.BackgroundTransparency = 0.850
+ZurentiV1.Frame_15.Position = UDim2.new(0.0820405036, 0, 0.101166554, 0)
+ZurentiV1.Frame_15.Size = UDim2.new(0.851686418, 0, 0.879750669, 0)
+
+ZurentiV1.UICorner_38.CornerRadius = UDim.new(0.0199999996, 0)
+ZurentiV1.UICorner_38.Parent = ZurentiV1.Frame_15
+
+ZurentiV1.ScrollingFrame_3.Parent = ZurentiV1.Frame_15
+ZurentiV1.ScrollingFrame_3.Active = true
+ZurentiV1.ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.ScrollingFrame_3.BackgroundTransparency = 1.000
+ZurentiV1.ScrollingFrame_3.BorderSizePixel = 0
+ZurentiV1.ScrollingFrame_3.Size = UDim2.new(1.03389633, 0, 0.998981953, 0)
+ZurentiV1.ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 7, 0)
+ZurentiV1.ScrollingFrame_3.ScrollBarThickness = 10
+
+ZurentiV1.Frame_16.Parent = ZurentiV1.ScrollingFrame_3
+ZurentiV1.Frame_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_16.BackgroundTransparency = 1.000
+ZurentiV1.Frame_16.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.UIListLayout_3.Parent = ZurentiV1.Frame_16
+ZurentiV1.UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+
+ZurentiV1.RemoveFace.Name = "RemoveFace"
+ZurentiV1.RemoveFace.Parent = ZurentiV1.Frame_16
+ZurentiV1.RemoveFace.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.RemoveFace.BackgroundTransparency = 0.850
+ZurentiV1.RemoveFace.BorderSizePixel = 0
+ZurentiV1.RemoveFace.Size = UDim2.new(0.966252327, 0, 0.0224668104, 0)
+
+ZurentiV1.TextLabel_79.Parent = ZurentiV1.RemoveFace
+ZurentiV1.TextLabel_79.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_79.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_79.Position = UDim2.new(0.0174128432, 0, 0, 0)
+ZurentiV1.TextLabel_79.Size = UDim2.new(0, 355, 0, 30)
+ZurentiV1.TextLabel_79.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_79.Text = "Remove Face Script (ServerSide)"
+ZurentiV1.TextLabel_79.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_79.TextScaled = true
+ZurentiV1.TextLabel_79.TextSize = 14.000
+ZurentiV1.TextLabel_79.TextWrapped = true
+ZurentiV1.TextLabel_79.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Execute_2.Name = "Execute"
+ZurentiV1.Execute_2.Parent = ZurentiV1.RemoveFace
+ZurentiV1.Execute_2.BackgroundColor3 = Color3.fromRGB(28, 220, 114)
+ZurentiV1.Execute_2.Position = UDim2.new(0.723512113, 0, 0.53664875, 0)
+ZurentiV1.Execute_2.Size = UDim2.new(0.264050096, 0, 0.366197139, 0)
+ZurentiV1.Execute_2.Font = Enum.Font.Oswald
+ZurentiV1.Execute_2.Text = "Execute"
+ZurentiV1.Execute_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Execute_2.TextScaled = true
+ZurentiV1.Execute_2.TextSize = 43.000
+ZurentiV1.Execute_2.TextWrapped = true
+
+ZurentiV1.UICorner_39.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_39.Parent = ZurentiV1.Execute_2
+
+ZurentiV1.Dusekkar_2.Name = "Dusekkar"
+ZurentiV1.Dusekkar_2.Parent = ZurentiV1.Frame_16
+ZurentiV1.Dusekkar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Dusekkar_2.BackgroundTransparency = 0.950
+ZurentiV1.Dusekkar_2.BorderSizePixel = 0
+ZurentiV1.Dusekkar_2.Size = UDim2.new(0.966252327, 0, 0.0224668104, 0)
+
+ZurentiV1.TextLabel_80.Parent = ZurentiV1.Dusekkar_2
+ZurentiV1.TextLabel_80.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_80.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_80.Position = UDim2.new(0.0174128432, 0, 0, 0)
+ZurentiV1.TextLabel_80.Size = UDim2.new(0, 355, 0, 30)
+ZurentiV1.TextLabel_80.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_80.Text = "Dusekkar Script"
+ZurentiV1.TextLabel_80.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_80.TextScaled = true
+ZurentiV1.TextLabel_80.TextSize = 14.000
+ZurentiV1.TextLabel_80.TextWrapped = true
+ZurentiV1.TextLabel_80.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Execute_3.Name = "Execute"
+ZurentiV1.Execute_3.Parent = ZurentiV1.Dusekkar_2
+ZurentiV1.Execute_3.BackgroundColor3 = Color3.fromRGB(28, 220, 114)
+ZurentiV1.Execute_3.Position = UDim2.new(0.723512113, 0, 0.53664875, 0)
+ZurentiV1.Execute_3.Size = UDim2.new(0.264050096, 0, 0.366197139, 0)
+ZurentiV1.Execute_3.Font = Enum.Font.Oswald
+ZurentiV1.Execute_3.Text = "Execute"
+ZurentiV1.Execute_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Execute_3.TextScaled = true
+ZurentiV1.Execute_3.TextSize = 43.000
+ZurentiV1.Execute_3.TextWrapped = true
+
+ZurentiV1.UICorner_40.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_40.Parent = ZurentiV1.Execute_3
+
+ZurentiV1.Requirements_2.Name = "Requirements"
+ZurentiV1.Requirements_2.Parent = ZurentiV1.Dusekkar_2
+ZurentiV1.Requirements_2.BackgroundColor3 = Color3.fromRGB(79, 158, 255)
+ZurentiV1.Requirements_2.Position = UDim2.new(0.359175086, 0, 0.533754647, 0)
+ZurentiV1.Requirements_2.Size = UDim2.new(0.350198001, 0, 0.366197139, 0)
+ZurentiV1.Requirements_2.Font = Enum.Font.Oswald
+ZurentiV1.Requirements_2.Text = "Requirements"
+ZurentiV1.Requirements_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Requirements_2.TextScaled = true
+ZurentiV1.Requirements_2.TextSize = 43.000
+ZurentiV1.Requirements_2.TextWrapped = true
+
+ZurentiV1.UICorner_41.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_41.Parent = ZurentiV1.Requirements_2
+
+ZurentiV1.Frame_17.Parent = ZurentiV1.Frame_16
+ZurentiV1.Frame_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_17.BackgroundTransparency = 0.850
+ZurentiV1.Frame_17.BorderSizePixel = 0
+ZurentiV1.Frame_17.Size = UDim2.new(0.966252327, 0, 0.0224668104, 0)
+
+ZurentiV1.TextLabel_81.Parent = ZurentiV1.Frame_17
+ZurentiV1.TextLabel_81.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_81.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_81.Position = UDim2.new(0.0174128432, 0, 0, 0)
+ZurentiV1.TextLabel_81.Size = UDim2.new(0, 355, 0, 30)
+ZurentiV1.TextLabel_81.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_81.Text = "Pumpkin Hat Script"
+ZurentiV1.TextLabel_81.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_81.TextScaled = true
+ZurentiV1.TextLabel_81.TextSize = 14.000
+ZurentiV1.TextLabel_81.TextWrapped = true
+ZurentiV1.TextLabel_81.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Requirements_3.Name = "Requirements"
+ZurentiV1.Requirements_3.Parent = ZurentiV1.Frame_17
+ZurentiV1.Requirements_3.BackgroundColor3 = Color3.fromRGB(79, 158, 255)
+ZurentiV1.Requirements_3.Position = UDim2.new(0.359175086, 0, 0.533754647, 0)
+ZurentiV1.Requirements_3.Size = UDim2.new(0.350198001, 0, 0.366197139, 0)
+ZurentiV1.Requirements_3.Font = Enum.Font.Oswald
+ZurentiV1.Requirements_3.Text = "Requirements"
+ZurentiV1.Requirements_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Requirements_3.TextScaled = true
+ZurentiV1.Requirements_3.TextSize = 43.000
+ZurentiV1.Requirements_3.TextWrapped = true
+
+ZurentiV1.UICorner_42.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_42.Parent = ZurentiV1.Requirements_3
+
+ZurentiV1.Execute_4.Name = "Execute"
+ZurentiV1.Execute_4.Parent = ZurentiV1.Frame_17
+ZurentiV1.Execute_4.BackgroundColor3 = Color3.fromRGB(28, 220, 114)
+ZurentiV1.Execute_4.Position = UDim2.new(0.723512113, 0, 0.53664875, 0)
+ZurentiV1.Execute_4.Size = UDim2.new(0.264050096, 0, 0.366197139, 0)
+ZurentiV1.Execute_4.Font = Enum.Font.Oswald
+ZurentiV1.Execute_4.Text = "Execute"
+ZurentiV1.Execute_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Execute_4.TextScaled = true
+ZurentiV1.Execute_4.TextSize = 43.000
+ZurentiV1.Execute_4.TextWrapped = true
+
+ZurentiV1.UICorner_43.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_43.Parent = ZurentiV1.Execute_4
+
+ZurentiV1.Skaters_3.Name = "Skaters"
+ZurentiV1.Skaters_3.Parent = ZurentiV1.Frame_16
+ZurentiV1.Skaters_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Skaters_3.BackgroundTransparency = 0.950
+ZurentiV1.Skaters_3.BorderSizePixel = 0
+ZurentiV1.Skaters_3.Size = UDim2.new(0.966252327, 0, 0.0224668104, 0)
+
+ZurentiV1.TextLabel_82.Parent = ZurentiV1.Skaters_3
+ZurentiV1.TextLabel_82.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_82.BackgroundTransparency = 1.000
+ZurentiV1.TextLabel_82.Position = UDim2.new(0.0174128432, 0, 0, 0)
+ZurentiV1.TextLabel_82.Size = UDim2.new(0, 355, 0, 30)
+ZurentiV1.TextLabel_82.Font = Enum.Font.Oswald
+ZurentiV1.TextLabel_82.Text = "Skater Hat Script"
+ZurentiV1.TextLabel_82.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.TextLabel_82.TextScaled = true
+ZurentiV1.TextLabel_82.TextSize = 14.000
+ZurentiV1.TextLabel_82.TextWrapped = true
+ZurentiV1.TextLabel_82.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Execute_5.Name = "Execute"
+ZurentiV1.Execute_5.Parent = ZurentiV1.Skaters_3
+ZurentiV1.Execute_5.BackgroundColor3 = Color3.fromRGB(28, 220, 114)
+ZurentiV1.Execute_5.Position = UDim2.new(0.723512113, 0, 0.53664875, 0)
+ZurentiV1.Execute_5.Size = UDim2.new(0.264050096, 0, 0.366197139, 0)
+ZurentiV1.Execute_5.Font = Enum.Font.Oswald
+ZurentiV1.Execute_5.Text = "Execute"
+ZurentiV1.Execute_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Execute_5.TextScaled = true
+ZurentiV1.Execute_5.TextSize = 43.000
+ZurentiV1.Execute_5.TextWrapped = true
+
+ZurentiV1.UICorner_44.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_44.Parent = ZurentiV1.Execute_5
+
+ZurentiV1.Requirements_4.Name = "Requirements"
+ZurentiV1.Requirements_4.Parent = ZurentiV1.Skaters_3
+ZurentiV1.Requirements_4.BackgroundColor3 = Color3.fromRGB(79, 158, 255)
+ZurentiV1.Requirements_4.Position = UDim2.new(0.359175086, 0, 0.533754647, 0)
+ZurentiV1.Requirements_4.Size = UDim2.new(0.350198001, 0, 0.366197139, 0)
+ZurentiV1.Requirements_4.Font = Enum.Font.Oswald
+ZurentiV1.Requirements_4.Text = "Requirements"
+ZurentiV1.Requirements_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Requirements_4.TextScaled = true
+ZurentiV1.Requirements_4.TextSize = 43.000
+ZurentiV1.Requirements_4.TextWrapped = true
+
+ZurentiV1.UICorner_45.CornerRadius = UDim.new(0.150000006, 0)
+ZurentiV1.UICorner_45.Parent = ZurentiV1.Requirements_4
+
+ZurentiV1.Universal_2.Name = "Universal"
+ZurentiV1.Universal_2.Parent = ZurentiV1.ScrollingFrame_2
+ZurentiV1.Universal_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Universal_2.BackgroundTransparency = 1.000
+ZurentiV1.Universal_2.ClipsDescendants = true
+ZurentiV1.Universal_2.Position = UDim2.new(-1, 0, 0, 0)
+ZurentiV1.Universal_2.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Universal_3.Name = "Universal"
+ZurentiV1.Universal_3.Parent = ZurentiV1.Universal_2
+ZurentiV1.Universal_3.Active = true
+ZurentiV1.Universal_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Universal_3.BackgroundTransparency = 1.000
+ZurentiV1.Universal_3.BorderSizePixel = 0
+ZurentiV1.Universal_3.Position = UDim2.new(-6.09686097e-08, 0, 2.84975528e-08, 0)
+ZurentiV1.Universal_3.Size = UDim2.new(0.998994768, 0, 0.929991663, 0)
+ZurentiV1.Universal_3.CanvasSize = UDim2.new(0, 0, 20, 0)
+
+ZurentiV1.Frame_18.Parent = ZurentiV1.Universal_3
+ZurentiV1.Frame_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_18.BackgroundTransparency = 1.000
+ZurentiV1.Frame_18.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Title_11.Name = "Title"
+ZurentiV1.Title_11.Parent = ZurentiV1.Frame_18
+ZurentiV1.Title_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_11.BackgroundTransparency = 1.000
+ZurentiV1.Title_11.Position = UDim2.new(0.154067084, 0, 2.84975532e-09, 0)
+ZurentiV1.Title_11.Size = UDim2.new(0.691501439, 0, 0.00518679759, 0)
+ZurentiV1.Title_11.ZIndex = 2
+ZurentiV1.Title_11.Font = Enum.Font.Oswald
+ZurentiV1.Title_11.Text = "UNIVERSAL"
+ZurentiV1.Title_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_11.TextScaled = true
+ZurentiV1.Title_11.TextSize = 14.000
+ZurentiV1.Title_11.TextWrapped = true
+
+ZurentiV1.Frame_19.Parent = ZurentiV1.Title_11
+ZurentiV1.Frame_19.BackgroundColor3 = Color3.fromRGB(28, 223, 116)
+ZurentiV1.Frame_19.Position = UDim2.new(-0.0564180277, 0, 0.992041588, 0)
+ZurentiV1.Frame_19.Size = UDim2.new(1.11099994, 0, 0.140000001, 0)
+
+ZurentiV1.UICorner_46.CornerRadius = UDim.new(1, 0)
+ZurentiV1.UICorner_46.Parent = ZurentiV1.Frame_19
+
+ZurentiV1.Frame_20.Parent = ZurentiV1.Frame_18
+ZurentiV1.Frame_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_20.BackgroundTransparency = 0.800
+ZurentiV1.Frame_20.ClipsDescendants = true
+ZurentiV1.Frame_20.Position = UDim2.new(0.0148504814, 0, 0.0107959155, 0)
+ZurentiV1.Frame_20.Size = UDim2.new(0.965654016, 0, 0.0239867941, 0)
+
+ZurentiV1.UICorner_47.CornerRadius = UDim.new(0.0250000004, 0)
+ZurentiV1.UICorner_47.Parent = ZurentiV1.Frame_20
+
+ZurentiV1.Frame_21.Parent = ZurentiV1.Frame_20
+ZurentiV1.Frame_21.BackgroundColor3 = Color3.fromRGB(48, 52, 57)
+ZurentiV1.Frame_21.Position = UDim2.new(0.0167082287, 0, 0.0356245637, 0)
+ZurentiV1.Frame_21.Size = UDim2.new(0.962160528, 0, 0.445116639, 0)
+
+ZurentiV1.UICorner_48.CornerRadius = UDim.new(0.0500000007, 0)
+ZurentiV1.UICorner_48.Parent = ZurentiV1.Frame_21
+
+ZurentiV1.Title_12.Name = "Title"
+ZurentiV1.Title_12.Parent = ZurentiV1.Frame_21
+ZurentiV1.Title_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_12.BackgroundTransparency = 1.000
+ZurentiV1.Title_12.Position = UDim2.new(0.0195599031, 0, 0, 0)
+ZurentiV1.Title_12.Size = UDim2.new(0.437920421, 0, 0.334024429, 0)
+ZurentiV1.Title_12.ZIndex = 2
+ZurentiV1.Title_12.Font = Enum.Font.Oswald
+ZurentiV1.Title_12.Text = "<font color=\"#25db7d\">RE-ANIMATE</font>"
+ZurentiV1.Title_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_12.TextScaled = true
+ZurentiV1.Title_12.TextSize = 14.000
+ZurentiV1.Title_12.TextWrapped = true
+ZurentiV1.Title_12.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Title_13.Name = "Title"
+ZurentiV1.Title_13.Parent = ZurentiV1.Frame_21
+ZurentiV1.Title_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_13.BackgroundTransparency = 1.000
+ZurentiV1.Title_13.Position = UDim2.new(0.0195600521, 0, 0.26000002, 0)
+ZurentiV1.Title_13.Size = UDim2.new(0.980440259, 0, 0.224024415, 0)
+ZurentiV1.Title_13.ZIndex = 2
+ZurentiV1.Title_13.Font = Enum.Font.Oswald
+ZurentiV1.Title_13.Text = "USE BEFORE SELECTING AN ANIMATION"
+ZurentiV1.Title_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_13.TextScaled = true
+ZurentiV1.Title_13.TextSize = 14.000
+ZurentiV1.Title_13.TextWrapped = true
+ZurentiV1.Title_13.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Execute_6.Name = "Execute"
+ZurentiV1.Execute_6.Parent = ZurentiV1.Frame_21
+ZurentiV1.Execute_6.BackgroundColor3 = Color3.fromRGB(28, 220, 114)
+ZurentiV1.Execute_6.Position = UDim2.new(0.690322518, 0, 0.670422673, 0)
+ZurentiV1.Execute_6.Size = UDim2.new(0.289904654, 0, 0.256197155, 0)
+ZurentiV1.Execute_6.Font = Enum.Font.Oswald
+ZurentiV1.Execute_6.Text = "Execute"
+ZurentiV1.Execute_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Execute_6.TextScaled = true
+ZurentiV1.Execute_6.TextSize = 43.000
+ZurentiV1.Execute_6.TextWrapped = true
+
+ZurentiV1.UICorner_49.CornerRadius = UDim.new(0.200000003, 0)
+ZurentiV1.UICorner_49.Parent = ZurentiV1.Execute_6
+
+ZurentiV1.Frame_22.Parent = ZurentiV1.Frame_20
+ZurentiV1.Frame_22.BackgroundColor3 = Color3.fromRGB(48, 52, 57)
+ZurentiV1.Frame_22.Position = UDim2.new(0.0187837388, 0, 0.517091393, 0)
+ZurentiV1.Frame_22.Size = UDim2.new(0.962160528, 0, 0.445116639, 0)
+
+ZurentiV1.UICorner_50.CornerRadius = UDim.new(0.0500000007, 0)
+ZurentiV1.UICorner_50.Parent = ZurentiV1.Frame_22
+
+ZurentiV1.Title_14.Name = "Title"
+ZurentiV1.Title_14.Parent = ZurentiV1.Frame_22
+ZurentiV1.Title_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_14.BackgroundTransparency = 1.000
+ZurentiV1.Title_14.Position = UDim2.new(0.0195599031, 0, 0, 0)
+ZurentiV1.Title_14.Size = UDim2.new(0.437920421, 0, 0.334024429, 0)
+ZurentiV1.Title_14.ZIndex = 2
+ZurentiV1.Title_14.Font = Enum.Font.Oswald
+ZurentiV1.Title_14.Text = "<font color=\"#249ded\">DIO POSE</font>"
+ZurentiV1.Title_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_14.TextScaled = true
+ZurentiV1.Title_14.TextSize = 14.000
+ZurentiV1.Title_14.TextWrapped = true
+ZurentiV1.Title_14.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Title_15.Name = "Title"
+ZurentiV1.Title_15.Parent = ZurentiV1.Frame_22
+ZurentiV1.Title_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_15.BackgroundTransparency = 1.000
+ZurentiV1.Title_15.Position = UDim2.new(0.0195598714, 0, 0.259999931, 0)
+ZurentiV1.Title_15.Size = UDim2.new(0.658880115, 0, 0.233682141, 0)
+ZurentiV1.Title_15.ZIndex = 2
+ZurentiV1.Title_15.Font = Enum.Font.Oswald
+ZurentiV1.Title_15.Text = "CREATED BY <font color=\"#249ded\">@ZUVENTI</font>"
+ZurentiV1.Title_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_15.TextScaled = true
+ZurentiV1.Title_15.TextSize = 14.000
+ZurentiV1.Title_15.TextWrapped = true
+ZurentiV1.Title_15.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Execute_7.Name = "Execute"
+ZurentiV1.Execute_7.Parent = ZurentiV1.Frame_22
+ZurentiV1.Execute_7.BackgroundColor3 = Color3.fromRGB(36, 157, 237)
+ZurentiV1.Execute_7.Position = UDim2.new(0.690322518, 0, 0.670422673, 0)
+ZurentiV1.Execute_7.Size = UDim2.new(0.289904654, 0, 0.256197155, 0)
+ZurentiV1.Execute_7.Font = Enum.Font.Oswald
+ZurentiV1.Execute_7.Text = "Execute"
+ZurentiV1.Execute_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Execute_7.TextScaled = true
+ZurentiV1.Execute_7.TextSize = 43.000
+ZurentiV1.Execute_7.TextWrapped = true
+
+ZurentiV1.UICorner_51.CornerRadius = UDim.new(0.200000003, 0)
+ZurentiV1.UICorner_51.Parent = ZurentiV1.Execute_7
+
+ZurentiV1.Title_16.Name = "Title"
+ZurentiV1.Title_16.Parent = ZurentiV1.Frame_18
+ZurentiV1.Title_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_16.BackgroundTransparency = 1.000
+ZurentiV1.Title_16.Position = UDim2.new(0.0160787702, 0, 0.00695275469, 0)
+ZurentiV1.Title_16.Size = UDim2.new(0.349628031, 0, 0.00392092997, 0)
+ZurentiV1.Title_16.ZIndex = 2
+ZurentiV1.Title_16.Font = Enum.Font.Oswald
+ZurentiV1.Title_16.Text = "ANIMATIONS"
+ZurentiV1.Title_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_16.TextScaled = true
+ZurentiV1.Title_16.TextSize = 14.000
+ZurentiV1.Title_16.TextWrapped = true
+ZurentiV1.Title_16.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Game_2.Name = "Game"
+ZurentiV1.Game_2.Parent = ZurentiV1.ScrollingFrame_2
+ZurentiV1.Game_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Game_2.BackgroundTransparency = 1.000
+ZurentiV1.Game_2.ClipsDescendants = true
+ZurentiV1.Game_2.Position = UDim2.new(-1, 0, 0, 0)
+ZurentiV1.Game_2.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Universal_4.Name = "Universal"
+ZurentiV1.Universal_4.Parent = ZurentiV1.Game_2
+ZurentiV1.Universal_4.Active = true
+ZurentiV1.Universal_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Universal_4.BackgroundTransparency = 1.000
+ZurentiV1.Universal_4.BorderSizePixel = 0
+ZurentiV1.Universal_4.Position = UDim2.new(-6.09686097e-08, 0, 2.84975528e-08, 0)
+ZurentiV1.Universal_4.Size = UDim2.new(0.998994768, 0, 0.929991663, 0)
+ZurentiV1.Universal_4.CanvasSize = UDim2.new(0, 0, 20, 0)
+
+ZurentiV1.Frame_23.Parent = ZurentiV1.Universal_4
+ZurentiV1.Frame_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_23.BackgroundTransparency = 1.000
+ZurentiV1.Frame_23.Size = UDim2.new(1, 0, 1, 0)
+
+ZurentiV1.Title_17.Name = "Title"
+ZurentiV1.Title_17.Parent = ZurentiV1.Frame_23
+ZurentiV1.Title_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_17.BackgroundTransparency = 1.000
+ZurentiV1.Title_17.Position = UDim2.new(0.154067084, 0, 2.84975532e-09, 0)
+ZurentiV1.Title_17.Size = UDim2.new(0.691501439, 0, 0.00518679759, 0)
+ZurentiV1.Title_17.ZIndex = 2
+ZurentiV1.Title_17.Font = Enum.Font.Oswald
+ZurentiV1.Title_17.Text = "GAME"
+ZurentiV1.Title_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_17.TextScaled = true
+ZurentiV1.Title_17.TextSize = 14.000
+ZurentiV1.Title_17.TextWrapped = true
+
+ZurentiV1.Frame_24.Parent = ZurentiV1.Title_17
+ZurentiV1.Frame_24.BackgroundColor3 = Color3.fromRGB(28, 223, 116)
+ZurentiV1.Frame_24.Position = UDim2.new(-0.0564180277, 0, 0.992041588, 0)
+ZurentiV1.Frame_24.Size = UDim2.new(1.11099994, 0, 0.140000001, 0)
+
+ZurentiV1.UICorner_52.CornerRadius = UDim.new(1, 0)
+ZurentiV1.UICorner_52.Parent = ZurentiV1.Frame_24
+
+ZurentiV1.Frame_25.Parent = ZurentiV1.Frame_23
+ZurentiV1.Frame_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Frame_25.BackgroundTransparency = 0.800
+ZurentiV1.Frame_25.ClipsDescendants = true
+ZurentiV1.Frame_25.Position = UDim2.new(0.0148504814, 0, 0.0107959155, 0)
+ZurentiV1.Frame_25.Size = UDim2.new(0.965654016, 0, 0.0239867941, 0)
+
+ZurentiV1.UICorner_53.CornerRadius = UDim.new(0.0250000004, 0)
+ZurentiV1.UICorner_53.Parent = ZurentiV1.Frame_25
+
+ZurentiV1.Title_18.Name = "Title"
+ZurentiV1.Title_18.Parent = ZurentiV1.Frame_23
+ZurentiV1.Title_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_18.BackgroundTransparency = 1.000
+ZurentiV1.Title_18.Position = UDim2.new(0.0160787627, 0, 0.00695275655, 0)
+ZurentiV1.Title_18.Size = UDim2.new(0.9644261, 0, 0.00392092997, 0)
+ZurentiV1.Title_18.ZIndex = 2
+ZurentiV1.Title_18.Font = Enum.Font.Oswald
+ZurentiV1.Title_18.Text = "GAME NAME SPECIFICS"
+ZurentiV1.Title_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Title_18.TextScaled = true
+ZurentiV1.Title_18.TextSize = 14.000
+ZurentiV1.Title_18.TextWrapped = true
+ZurentiV1.Title_18.TextXAlignment = Enum.TextXAlignment.Left
+
+ZurentiV1.Close_4.Name = "Close"
+ZurentiV1.Close_4.Parent = ZurentiV1.Panel_4
+ZurentiV1.Close_4.BackgroundColor3 = Color3.fromRGB(28, 223, 116)
+ZurentiV1.Close_4.BorderSizePixel = 0
+ZurentiV1.Close_4.Position = UDim2.new(0.921810567, 0, -0.05008341, 0)
+ZurentiV1.Close_4.Size = UDim2.new(0.111454576, 0, 0.0906774551, 0)
+ZurentiV1.Close_4.Font = Enum.Font.FredokaOne
+ZurentiV1.Close_4.Text = "X"
+ZurentiV1.Close_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZurentiV1.Close_4.TextScaled = true
+ZurentiV1.Close_4.TextSize = 14.000
+ZurentiV1.Close_4.TextWrapped = true
+
+ZurentiV1.UICorner_54.CornerRadius = UDim.new(0.100000001, 0)
+ZurentiV1.UICorner_54.Parent = ZurentiV1.Close_4
+
+-- Scripts:
+
+local function SWVGXH_fake_script() -- ZurentiV1.Scripts.Functionality 
+	local script = Instance.new('LocalScript', ZurentiV1.Scripts)
+
+	--// Written by Zuventi
+	--// Development Started: 22/04/2022
+	--// Last Updated: 22/04/2022
+	
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	--// DEBOUNCES
+	--// ALL UI MODES AND DEBOUNCES WILL BE POSTED HERE
+	
+	UIToggled = false
+	UIButton = false
+	
+	PanelVisible = false
+	
+	UniversalActive = false
+	GameActive = false
+	Add_OnsActive = false
+	
+	OnsalePage = false
+	LimitedPage = false
+	
+	
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	--// VARIABLES
+	--// EVERYTHING DEFINED WILL BE LISTED HERE
+	
+	local player = game.Players.LocalPlayer
+	local character = player.Character
+	
+	local TweenService = game:GetService("TweenService")
+	local SoundService = game:GetService('SoundService')
+	
+	local newAsset = Instance.new('BlurEffect')
+	newAsset.Parent = game.Lighting
+	newAsset.Name = "Blur"
+	newAsset.Enabled = false
+	newAsset.Size = 0
+	
+	local tweenblurinfo = TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0)
+	local TweenBlurIn = TweenService:Create(game.Lighting.Blur, tweenblurinfo, {Size = 24})
+	local TweenBlurOut = TweenService:Create(game.Lighting.Blur, tweenblurinfo, {Size = 0})
+	
+	local CoreFrame = script.Parent.Parent.Parent
+	local Buttons = CoreFrame.Main.Buttons
+	local StartFrame = CoreFrame.Main.Start
+	local PanelFrame = CoreFrame.Main.Menu.Panel
+	local RequirementsFrame = CoreFrame.Main.Requirements
+	
+	local AddOnFrame = PanelFrame.Main.ScrollingFrame["Add-Ons"]
+	
+	
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	--// GAME CHECK
+	
+	if game.PlaceId == 12109643 --[[Fencing]] then
+		
+		StartFrame.Frame.Panel.Supported.Text = "GAME: SUPPORTED"
+		StartFrame.Frame.Panel.Supported.TextColor3 = Color3.fromRGB(28, 223, 116)
+		
+	else
+		
+		StartFrame.Frame.Panel.Supported.Text = "GAME: UNSUPPORTED"
+		StartFrame.Frame.Panel.Supported.TextColor3 = Color3.fromRGB(223, 89, 89)
+		
+	end
+	
+	
+	
+	
+	--//START SCRIPT
+	
+	script.Parent.Parent.Start.Frame.Panel.Position = UDim2.new(-1, 0, 0.169, 0)
+	script.Parent.Parent.Buttons.Frame.Position = UDim2.new(1, 0, 0.826, 0)
+	script.Parent.Parent.Menu.Panel.Position = UDim2.new(1, 0, 0.072, 0)
+	
+	newAsset.Enabled = true
+	
+	TweenBlurIn:Play()
+	script.Parent.Parent.Start.Frame.Panel:TweenPosition(UDim2.new(0.01, 0, 0.169, 0),"Out","Elastic", 1)
+	
+	
+	--//LAUNCH BUTTON
+	
+	
+	StartFrame.Frame.Panel.Execute.MouseButton1Down:Connect(function()
+		if UIButton == false then
+			UIButton = true
+	
+			StartFrame.Frame.Panel:TweenPosition(UDim2.new(0.01, 0, -1.169, 0),"Out","Elastic", 1)
+			TweenBlurOut:Play()
+	
+			Buttons.Frame:TweenPosition(UDim2.new(0.96, 0, 0.826, 0),"Out","Elastic", 1)
+			Buttons.Frame.Toggle.Text = "<"
+	
+	
+			wait(1)
+			UIButton = false
+		end
+	end)
+	
+	
+	
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	--//BOTTOM BAR BUTTONS
+	
+	Buttons.Frame.Toggle.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+			UIButton = true
+	
+	
+			if UIToggled == true then
+				UIToggled = false
+	
+				Buttons.Frame:TweenPosition(UDim2.new(0.96, 0, 0.826, 0),"Out","Elastic", 1)
+				Buttons.Frame.Toggle.Text = "<"
+	
+			else	
+				
+				UIToggled = true
+	
+				Buttons.Frame:TweenPosition(UDim2.new(0.9, 0, 0.826, 0),"Out","Elastic", 1)
+				Buttons.Frame.Toggle.Text = ">"
+	
+			end
+	
+			UIButton = false	
+	
+		end
+	end)
+	
+	Buttons.Frame.Pumpkin.MouseButton1Down:Connect(function()
+		if UIButton == false and PanelVisible == false then
+			
+			UIButton = true
+			PanelVisible = true
+			
+			--// SETUP GUI
+			
+			PanelFrame.Position = UDim2.new(1, 0, 0.072, 0)
+			
+			
+			PanelFrame.Main.ScrollingFrame["Universal"].Position = UDim2.new(-1, 0, 0, 0)
+			PanelFrame.Main.ScrollingFrame["Game"].Position = UDim2.new(-1, 0, 0, 0)
+			PanelFrame.Main.ScrollingFrame["Add-Ons"].Position = UDim2.new(-1, 0, 0, 0)
+			
+			--
+			
+			UniversalActive = true
+			GameActive = false
+			Add_OnsActive = false
+			
+			--// OPEN GUI
+			
+			TweenBlurIn:Play()
+			PanelFrame:TweenPosition(UDim2.new(0, 0, 0.072, 0),"Out","Sine", 0.25)
+			wait(0.25)
+			PanelFrame.Main.ScrollingFrame["Universal"]:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine", 0.25)
+			
+			wait(0.25)
+			UIButton = false
+			
+		end	
+	end)
+	
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	--// PANEL 
+	
+	PanelFrame.Close.MouseButton1Down:Connect(function()
+		if UIButton == false then
+			
+			UIButton = true
+			
+			TweenBlurOut:Play()
+			PanelFrame:TweenPosition(UDim2.new(1, 0, 0.072, 0),"Out","Sine", 0.25)
+			
+			UniversalActive = false
+			GameActive = false
+			Add_OnsActive = false
+			
+			wait(0.5)
+			UIButton = false
+			PanelVisible = false
+		end
+	end)
+	
+	
+	
+	PanelFrame.Top.Frame.Universal.MouseButton1Down:Connect(function()
+		if UIButton == false then
+			if UniversalActive == false then
+				
+				UIButton = true
+				
+				if GameActive == true then
+					PanelFrame.Main.ScrollingFrame["Game"]:TweenPosition(UDim2.new(1, 0, 0, 0),"Out","Sine", 0.25)
+					GameActive = false
+				end
+				
+				if Add_OnsActive == true then
+					PanelFrame.Main.ScrollingFrame["Add-Ons"]:TweenPosition(UDim2.new(1, 0, 0, 0),"Out","Sine", 0.25)
+					Add_OnsActive = false
+				end
+				
+				wait(0.25)
+				PanelFrame.Main.ScrollingFrame["Universal"]:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine", 0.25)
+				
+				wait(0.25)
+				UniversalActive = true
+				UIButton = false
+				
+			end
+		end
+	end)
+	
+	
+	
+	PanelFrame.Top.Frame.Game.MouseButton1Down:Connect(function()
+		if UIButton == false then
+			if GameActive == false then
+	
+				UIButton = true
+	
+				if UniversalActive == true then
+					PanelFrame.Main.ScrollingFrame["Universal"]:TweenPosition(UDim2.new(1, 0, 0, 0),"Out","Sine", 0.25)
+					UniversalActive = false
+				end
+	
+				if Add_OnsActive == true then
+					PanelFrame.Main.ScrollingFrame["Add-Ons"]:TweenPosition(UDim2.new(1, 0, 0, 0),"Out","Sine", 0.25)
+					Add_OnsActive = false
+				end
+	
+				wait(0.25)
+				PanelFrame.Main.ScrollingFrame["Game"]:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine", 0.25)
+	
+				wait(0.25)
+				GameActive = true
+				UIButton = false
+	
+			end
+		end
+	end)
+	
+	
+	
+	PanelFrame.Top.Frame["Add-Ons"].MouseButton1Down:Connect(function()
+		if UIButton == false then
+			if Add_OnsActive == false then
+	
+				UIButton = true
+	
+				if GameActive == true then
+					PanelFrame.Main.ScrollingFrame["Game"]:TweenPosition(UDim2.new(1, 0, 0, 0),"Out","Sine", 0.25)
+					GameActive = false
+				end
+	
+				if UniversalActive == true then
+					PanelFrame.Main.ScrollingFrame["Universal"]:TweenPosition(UDim2.new(1, 0, 0, 0),"Out","Sine", 0.25)
+					UniversalActive = false
+				end
+	
+				wait(0.25)
+				PanelFrame.Main.ScrollingFrame["Add-Ons"]:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine", 0.25)
+	
+				wait(0.25)
+				Add_OnsActive = true
+				UIButton = false
+	
+			end
+		end
+	end)
+	
+	
+	
+	
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	--// ADD-ON SCRIPTS
+	
+	AddOnFrame.Frame.ScrollingFrame.Frame.RemoveFace.Execute.MouseButton1Down:Connect(function()
+		if UIButton == false then
+			
+			UIButton = true
+			
+			if character:FindFirstChild('Head'):FindFirstChild('face') then
+				
+				character:FindFirstChild('Head'):FindFirstChild('face'):Destroy()
+				
+			end
+			
+			wait(0.5)
+			UIButton = false
+			
+		end
+	end)
+	
+	
+	
+	AddOnFrame.Frame.ScrollingFrame.Frame.Dusekkar.Execute.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+			UIButton = true
+	
+			if character:FindFirstChild('TheDusekkar') then
+				
+				character.TheDusekkar.Handle.DusekkarScript:Destroy()
+				character.TheDusekkar.Handle.Fire.Enabled = true
+	
+			end
+	
+			wait(0.5)
+			UIButton = false
+	
+		end
+	end)
+	
+	AddOnFrame.Frame.ScrollingFrame.Frame.Dusekkar.Requirements.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+			UIButton = true
+			
+			
+			--// SET UP
+			
+			UniversalActive = false
+			GameActive = false
+			Add_OnsActive = false
+			
+			RequirementsFrame['Dusekkar'].Intro.Position = UDim2.new(0.184, 0, -1.173, 0)
+			RequirementsFrame['Dusekkar'].List.Position = UDim2.new(-1.174, 0 ,0.19, 0)
+			RequirementsFrame['Dusekkar'].Required.Position = UDim2.new(0, 0, -1, 0)
+			
+			
+			--// FUNCTION
+			PanelFrame:TweenPosition(UDim2.new(1, 0, 0.072, 0),"Out","Sine", 0.25)
+			
+			RequirementsFrame['Dusekkar'].Intro:TweenPosition(UDim2.new(0.184, 0, 0.173, 0),"Out","Sine", 0.25)
+			
+	
+			wait(0.5)
+			UIButton = false
+	
+		end
+	end)
+	
+	RequirementsFrame.Dusekkar.Intro.Next.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+			UIButton = true
+	
+			RequirementsFrame['Dusekkar'].Intro:TweenPosition(UDim2.new(0.184, 0, -1.173, 0),"Out","Sine", 0.25)
+			wait(0.25)
+			RequirementsFrame['Dusekkar'].List:TweenPosition(UDim2.new(0.174, 0 ,0.19, 0),"Out","Sine", 0.25)
+			RequirementsFrame['Dusekkar'].Required:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine", 0.25)
+	
+			wait(0.5)
+			UIButton = false
+	
+		end
+	end)
+	
+	RequirementsFrame.Dusekkar.Intro.Back.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+			UIButton = true
+	
+			RequirementsFrame['Dusekkar'].Intro:TweenPosition(UDim2.new(0.184, 0, -1.173, 0),"Out","Sine", 0.25)
+			wait(0.25)
+	
+			--// SETUP GUI
+	
+			PanelFrame.Position = UDim2.new(1, 0, 0.072, 0)
+	
+	
+			PanelFrame.Main.ScrollingFrame["Universal"].Position = UDim2.new(-1, 0, 0, 0)
+			PanelFrame.Main.ScrollingFrame["Game"].Position = UDim2.new(-1, 0, 0, 0)
+			PanelFrame.Main.ScrollingFrame["Add-Ons"].Position = UDim2.new(-1, 0, 0, 0)
+	
+			--
+	
+			UniversalActive = true
+			GameActive = false
+			Add_OnsActive = false
+	
+			--// OPEN GUI
+	
+			PanelFrame.Main.ScrollingFrame["Universal"]:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine", 0.25)
+			wait(0.25)
+			PanelFrame:TweenPosition(UDim2.new(0, 0, 0.072, 0),"Out","Sine", 0.25)
+			
+			wait(0.5)
+			UIButton = false
+	
+		end
+	end)
+	
+	RequirementsFrame.Dusekkar.Required.Close.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+			UIButton = true
+	
+			RequirementsFrame['Dusekkar'].Intro:TweenPosition(UDim2.new(0.184, 0, -1.173, 0),"Out","Sine", 0.25)
+			wait(0.25)
+	
+			--// SETUP GUI
+	
+			PanelFrame.Position = UDim2.new(1, 0, 0.072, 0)
+	
+	
+			PanelFrame.Main.ScrollingFrame["Universal"].Position = UDim2.new(-1, 0, 0, 0)
+			PanelFrame.Main.ScrollingFrame["Game"].Position = UDim2.new(-1, 0, 0, 0)
+			PanelFrame.Main.ScrollingFrame["Add-Ons"].Position = UDim2.new(-1, 0, 0, 0)
+	
+			--
+	
+			UniversalActive = true
+			GameActive = false
+			Add_OnsActive = false
+	
+			--// OPEN GUI
+	
+			RequirementsFrame['Dusekkar'].List:TweenPosition(UDim2.new(-1.174, 0, 0.19, 0),"Out","Sine", 0.25)
+			RequirementsFrame['Dusekkar'].Required:TweenPosition(UDim2.new(0, 0, -1, 0),"Out","Sine", 0.25)
+			wait(0.5)
+			PanelFrame:TweenPosition(UDim2.new(0, 0, 0.072, 0),"Out","Sine", 0.25)
+			
+			wait(0.5)
+			UIButton = false
+	
+		end
+	end)
+	
+	
+	
+	
+	AddOnFrame.Frame.ScrollingFrame.Frame.Skaters.Execute.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+		-- tbd	
+			
+		end
+	end)
+	
+	AddOnFrame.Frame.ScrollingFrame.Frame.Skaters.Requirements.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+			UIButton = true
+	
+	
+			--// SET UP
+	
+			UniversalActive = false
+			GameActive = false
+			Add_OnsActive = false
+	
+			RequirementsFrame['Skaters'].Intro.Position = UDim2.new(0.184, 0, -1.173, 0)
+			RequirementsFrame['Skaters'].List.Position = UDim2.new(-1.174, 0 ,0.19, 0)
+			RequirementsFrame['Skaters'].Required.Position = UDim2.new(0, 0, -1, 0)
+			
+			RequirementsFrame['Skaters'].List['On Sale'].Position = UDim2.new(0, 0, 0, 0)
+			RequirementsFrame['Skaters'].List['Off Sale'].Position = UDim2.new(-1, 0, 0, 0)
+			RequirementsFrame['Skaters'].Required.Onsale.TextColor3 = Color3.fromRGB(255, 255, 255)
+			RequirementsFrame['Skaters'].Required.Limited.TextColor3 = Color3.fromRGB(0, 0, 0)
+			
+	
+			--// FUNCTION
+			PanelFrame:TweenPosition(UDim2.new(1, 0, 0.072, 0),"Out","Sine", 0.25)
+	
+			RequirementsFrame['Skaters'].Intro:TweenPosition(UDim2.new(0.184, 0, 0.173, 0),"Out","Sine", 0.25)
+	
+	
+			wait(0.5)
+			UIButton = false
+	
+		end
+	end)
+	
+	RequirementsFrame.Skaters.Intro.Next.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+			UIButton = true
+	
+			RequirementsFrame['Skaters'].Intro:TweenPosition(UDim2.new(0.184, 0, -1.173, 0),"Out","Sine", 0.25)
+			wait(0.25)
+			RequirementsFrame['Skaters'].List:TweenPosition(UDim2.new(0.174, 0 ,0.19, 0),"Out","Sine", 0.25)
+			RequirementsFrame['Skaters'].Required:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine", 0.25)
+	
+			wait(0.5)
+			UIButton = false
+	
+		end
+	end)
+	
+	RequirementsFrame.Skaters.Intro.Back.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+			UIButton = true
+	
+			RequirementsFrame['Dusekkar'].Intro:TweenPosition(UDim2.new(0.184, 0, -1.173, 0),"Out","Sine", 0.25)
+			wait(0.25)
+	
+			--// SETUP GUI
+	
+			PanelFrame.Position = UDim2.new(1, 0, 0.072, 0)
+	
+	
+			PanelFrame.Main.ScrollingFrame["Universal"].Position = UDim2.new(-1, 0, 0, 0)
+			PanelFrame.Main.ScrollingFrame["Game"].Position = UDim2.new(-1, 0, 0, 0)
+			PanelFrame.Main.ScrollingFrame["Add-Ons"].Position = UDim2.new(-1, 0, 0, 0)
+	
+			--
+	
+			UniversalActive = true
+			GameActive = false
+			Add_OnsActive = false
+	
+			--// OPEN GUI
+	
+			PanelFrame.Main.ScrollingFrame["Universal"]:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine", 0.25)
+			wait(0.25)
+			PanelFrame:TweenPosition(UDim2.new(0, 0, 0.072, 0),"Out","Sine", 0.25)
+	
+			wait(0.5)
+			UIButton = false
+	
+		end
+	end)
+	
+	RequirementsFrame.Skaters.Required.Onsale.MouseButton1Down:Connect(function()
+		if UIButton == false and OnsalePage == false then
+	
+			UIButton = true
+			OnsalePage = true
+			
+			
+			--// SET UP
+			
+			RequirementsFrame['Skaters'].List['On Sale'].Position = UDim2.new(-1, 0, 0, 0)
+			
+	
+			RequirementsFrame['Skaters'].List['Off Sale']:TweenPosition(UDim2.new(1, 0, 0, 0),"Out","Sine", 0.25)
+			RequirementsFrame['Skaters'].Required.Limited.TextColor3 = Color3.fromRGB(0, 0, 0)
+			
+			wait(0.25)
+			
+			RequirementsFrame['Skaters'].List['On Sale']:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine", 0.25)
+			RequirementsFrame['Skaters'].Required.Onsale.TextColor3 = Color3.fromRGB(255, 255, 255)
+			
+	
+			wait(0.5)
+			UIButton = false
+			OnsalePage = false
+	
+		end
+	end)
+	
+	RequirementsFrame.Skaters.Required.Limited.MouseButton1Down:Connect(function()
+		if UIButton == false and OnsalePage == false then
+	
+			UIButton = true
+			OnsalePage = true
+	
+	
+			--// SET UP
+	
+			RequirementsFrame['Skaters'].List['Off Sale'].Position = UDim2.new(-1, 0, 0, 0)
+	
+	
+			RequirementsFrame['Skaters'].List['On Sale']:TweenPosition(UDim2.new(1, 0, 0, 0),"Out","Sine", 0.25)
+			RequirementsFrame['Skaters'].Required.Onsale.TextColor3 = Color3.fromRGB(0, 0, 0)
+	
+			wait(0.25)
+	
+			RequirementsFrame['Skaters'].List['Off Sale']:TweenPosition(UDim2.new(0, 0, 0, 0),"Out","Sine", 0.25)
+			RequirementsFrame['Skaters'].Required.Limited.TextColor3 = Color3.fromRGB(255, 255, 255)
+	
+	
+			wait(0.5)
+			UIButton = false
+			OnsalePage = false
+	
+		end
+	end)
+	
+	RequirementsFrame.Skaters.Required.Close.MouseButton1Down:Connect(function()
+		if UIButton == false then
+	
+			UIButton = true
+	
+			RequirementsFrame['Skaters'].Intro:TweenPosition(UDim2.new(0.184, 0, -1.173, 0),"Out","Sine", 0.25)
+			wait(0.25)
+	
+			--// SETUP GUI
+	
+			PanelFrame.Position = UDim2.new(1, 0, 0.072, 0)
+	
+	
+			PanelFrame.Main.ScrollingFrame["Universal"].Position = UDim2.new(-1, 0, 0, 0)
+			PanelFrame.Main.ScrollingFrame["Game"].Position = UDim2.new(-1, 0, 0, 0)
+			PanelFrame.Main.ScrollingFrame["Add-Ons"].Position = UDim2.new(-1, 0, 0, 0)
+	
+			--
+	
+			UniversalActive = true
+			GameActive = false
+			Add_OnsActive = false
+	
+			--// OPEN GUI
+	
+			RequirementsFrame['Skaters'].List:TweenPosition(UDim2.new(-1.174, 0, 0.19, 0),"Out","Sine", 0.25)
+			RequirementsFrame['Skaters'].Required:TweenPosition(UDim2.new(0, 0, -1, 0),"Out","Sine", 0.25)
+			wait(0.5)
+			PanelFrame:TweenPosition(UDim2.new(0, 0, 0.072, 0),"Out","Sine", 0.25)
+	
+			wait(0.5)
+			UIButton = false
+	
+		end
+	end)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+end
+coroutine.wrap(SWVGXH_fake_script)()
